@@ -5,29 +5,26 @@ public class Player : Character
 {
 	private Vector2 movement;
 	private Weapon weapon;
-	private Vector2 mousePosition;
-	private SpriteRenderer spriteRenderer;
 
 	void Start()
 	{
 		base.Start();
-		weapon = GetComponentInChildren<Weapon>();
-		spriteRenderer = GetComponent<SpriteRenderer>();
+		this.weapon = GetComponentInChildren<Weapon>();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		movement.x = Input.GetAxisRaw("Horizontal");
-		movement.y = Input.GetAxisRaw("Vertical");
-		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		weapon.UpdatePosition(mousePosition);
-		UpdatePlayerRotation(mousePosition);
+		this.movement.x = Input.GetAxisRaw("Horizontal");
+		this.movement.y = Input.GetAxisRaw("Vertical");
+		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		this.weapon.UpdatePosition(mousePosition);
+		this.UpdatePlayerRotation(mousePosition);
 	}
 
     private void FixedUpdate()
     {
-		rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+		this.Move();
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
@@ -37,17 +34,25 @@ public class Player : Character
 		
 		if (lookDirection.x > 0)
 		{
-			transform.eulerAngles = new Vector3(0,0,0);
+			this.transform.eulerAngles = new Vector3(0,0,0);
 		}
 		else
 		{
-			transform.eulerAngles = new Vector3(0,180,0);
+			this.transform.eulerAngles = new Vector3(0,180,0);
 		}
 	}
 
+	/*
+	protected void equipWeapon(Weapon _weapon)
+    {
+		this.weapon = _weapon;
+		_weapon.transform.parent = this.transform;
+	}
+	*/
+
 	protected override void Move()
 	{
-		return;
+		this.rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 	}
 
 	protected override void Attack()

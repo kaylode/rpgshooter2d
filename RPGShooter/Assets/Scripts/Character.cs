@@ -18,8 +18,8 @@ public abstract class Character : MonoBehaviour
 
     protected virtual void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        this.rb = GetComponent<Rigidbody2D>();
+        this.animator = GetComponent<Animator>();
     }
 
 
