@@ -34,11 +34,11 @@ public class Player : Character
 		
 		if (lookDirection.x > 0)
 		{
-			this.transform.eulerAngles = new Vector3(0,0,0);
+			this.transform.localEulerAngles = new Vector3(0,0,0);
 		}
 		else
 		{
-			this.transform.eulerAngles = new Vector3(0,180,0);
+			this.transform.localEulerAngles = new Vector3(0,180,0);
 		}
 	}
 

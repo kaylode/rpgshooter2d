@@ -25,21 +25,29 @@ public class Gun : Weapon
 
         float magnitue = lookDirection.magnitude;
 
-        if (lookDirection.x >= 0)
-        {
-            this.transform.localRotation = Quaternion.Euler(1, 1, 1);
-        }
-        else
-        {
-            this.transform.localRotation = Quaternion.Euler(1, -1, 1);
-        }
-        print(this.transform.localRotation);
-
         if (magnitue >= 1.5)
         {
             float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
             var rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             this.transform.rotation = rotation;
+        }
+
+
+        if (lookDirection.x > 0)
+        {
+            this.transform.eulerAngles = new Vector3(
+                this.transform.eulerAngles.x,
+                this.transform.eulerAngles.y,
+                this.transform.eulerAngles.z
+            );
+        }
+        else
+        {
+            this.transform.eulerAngles = new Vector3(
+                this.transform.eulerAngles.x - 180,
+                this.transform.eulerAngles.y,
+                - this.transform.eulerAngles.z
+            );
         }
 
     }
