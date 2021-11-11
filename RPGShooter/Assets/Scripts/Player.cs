@@ -3,18 +3,14 @@ using System.Collections;
 
 public class Player : Character
 {
-	public Camera cam;
-
 	private Vector2 movement;
 	private Weapon weapon;
 	private Vector2 mousePosition;
 	private SpriteRenderer spriteRenderer;
 
-
 	void Start()
 	{
-		//healthBar = GetComponentInChildren<HealthBar>();
-		//healthBar.Initialize(health);
+		base.Start();
 		weapon = GetComponentInChildren<Weapon>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
@@ -24,7 +20,7 @@ public class Player : Character
 	{
 		movement.x = Input.GetAxisRaw("Horizontal");
 		movement.y = Input.GetAxisRaw("Vertical");
-		mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
+		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		weapon.UpdatePosition(mousePosition);
 		UpdatePlayerRotation(mousePosition);
 	}

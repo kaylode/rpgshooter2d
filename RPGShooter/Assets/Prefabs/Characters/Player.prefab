@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5038691097118946564}
   - component: {fileID: 5038691097118946565}
   - component: {fileID: 5038691097118946570}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 5038691097234472610}
   - component: {fileID: 5038691097234472669}
   - component: {fileID: -3105645570986476396}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -251,12 +251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 100
-  shield: 0
+  shield: 5
   speed: 3
-  damage: 3
-  animator: {fileID: 0}
-  rb: {fileID: 5038691097234472610}
-  cam: {fileID: 0}
+  damage: 10
 --- !u!1 &5038691097759219679
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5038691097759219676}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

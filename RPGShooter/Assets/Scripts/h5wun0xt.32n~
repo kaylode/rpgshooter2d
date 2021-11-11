@@ -16,7 +16,7 @@ public abstract class Character : MonoBehaviour
     protected abstract void Attack();
     protected abstract void Die();
 
-    protected virtual void Start()
+    protected void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

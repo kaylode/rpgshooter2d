@@ -8770,6 +8770,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3105645570986476396, guid: 99f4d2c2c4b200d47b46d948788475d7,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 5038691097118946566, guid: 99f4d2c2c4b200d47b46d948788475d7,
         type: 3}
       propertyPath: m_Layer

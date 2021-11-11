@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7502841476963378592}
   - component: {fileID: 7502841476963378605}
   - component: {fileID: 7502841476963378606}
-  - component: {fileID: -3751199415894345504}
-  m_Layer: 0
+  - component: {fileID: -4710923316402667087}
+  m_Layer: 13
   m_Name: Zombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &-3751199415894345504
+--- !u!114 &-4710923316402667087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afee15e50161845e08cf3640d4c8d45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  scoreForKilling: 10
-  speedDamp: 0.6
-  health: 100
+  health: 50
+  maxHealth: 50
+  shield: 0
+  speed: 0.6
+  damage: 5
+  player: {fileID: 5038691097234472670, guid: 99f4d2c2c4b200d47b46d948788475d7, type: 3}

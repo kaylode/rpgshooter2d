@@ -1,45 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour {
-
-	public float damage = 20f;
-	public int scoreForKilling = 10;
-	public float speedDamp = 0.6f;
-	public float health = 100;
-
-	private GameObject player;
-	private Rigidbody2D rb;
-	private Animator animator;
-
-	// private HealthBar healthBar;
+public class Enemy : Character 
+{
+	public GameObject player;
 
 	void Start() {
+		base.Start();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		Physics2D.IgnoreLayerCollision (11, 12);
-		rb = GetComponent<Rigidbody2D>();
-		animator = GetComponent<Animator>();
-
-		//healthBar = GetComponentInChildren<HealthBar>();
-		//healthBar.Initialize(health);
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 		Vector3 playerPosition = player.transform.position;
 		Vector3 direction = (playerPosition - transform.position).normalized;
-		Vector2 headingDirection = new Vector2(direction.x * speedDamp, direction.y * speedDamp);
+		Vector2 headingDirection = new Vector2(direction.x * speed, direction.y * speed);
 		rb.velocity = headingDirection;
-
-		/*if (health <= 0) {
-			Destroy(gameObject);
-			GameScore.adjustScoreBy(scoreForKilling);
-		}*/
 	}
 
 	void UpdateAnimation(Vector2 direction)
     {
 		
+	}
+
+	protected override void Move()
+	{
+		return;
+	}
+
+	protected override void Attack()
+	{
+		return;
+	}
+
+	protected override void Die()
+	{
+		return;
 	}
 
 	/*
