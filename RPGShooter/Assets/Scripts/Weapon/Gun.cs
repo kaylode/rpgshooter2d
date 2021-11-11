@@ -27,12 +27,13 @@ public class Gun : Weapon
 
         if (lookDirection.x >= 0)
         {
-            this.transform.localScale = new Vector3(1f, 1f, 1f);
+            this.transform.localRotation = Quaternion.Euler(1, 1, 1);
         }
         else
         {
-            this.transform.localScale = new Vector3(1f, -1f, 1f);
+            this.transform.localRotation = Quaternion.Euler(1, -1, 1);
         }
+        print(this.transform.localRotation);
 
         if (magnitue >= 1.5)
         {
