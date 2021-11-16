@@ -18,7 +18,6 @@ public class Player : Character
 		this.movement.x = Input.GetAxisRaw("Horizontal");
 		this.movement.y = Input.GetAxisRaw("Vertical");
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		this.weapon.UpdatePosition(mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
 	}
 
@@ -42,13 +41,15 @@ public class Player : Character
 		}
 	}
 
-	/*
-	protected void equipWeapon(Weapon _weapon)
+	public void equipWeapon(Weapon _weapon)
     {
+		if (this.weapon != null)
+        {
+			Destroy(this.weapon.gameObject);
+		}
 		this.weapon = _weapon;
 		_weapon.transform.parent = this.transform;
 	}
-	*/
 
 	protected override void Move()
 	{

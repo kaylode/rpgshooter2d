@@ -6,9 +6,7 @@ public class Bullet : MonoBehaviour {
 	public float damage = 20f;
 	public GameObject hitEffect;
 
-	void Start() {
-		Physics2D.IgnoreLayerCollision (9, 10);
-	}
+	void Start() {}
 
 	void OnCollisionEnter2D(Collision2D collision) {
 
