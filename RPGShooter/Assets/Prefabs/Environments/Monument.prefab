@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4331734481228722046}
   - component: {fileID: 4331734481228722032}
-  - component: {fileID: 4331734481228722033}
+  - component: {fileID: 1850149100112068298}
+  - component: {fileID: 6171525027334357322}
   m_Layer: 0
   m_Name: Monument
   m_TagString: Wall
@@ -83,8 +84,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4331734481228722033
-CircleCollider2D:
+--- !u!70 &1850149100112068298
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,6 +97,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06}
-  serializedVersion: 2
-  m_Radius: 0.3
+  m_Offset: {x: -0.0095437, y: 0.18650386}
+  m_Size: {x: 0.36033866, y: 0.36033866}
+  m_Direction: 0
+--- !u!210 &6171525027334357322
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4331734481228722047}
+  m_Enabled: 1
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
+  m_SortingOrder: 2
