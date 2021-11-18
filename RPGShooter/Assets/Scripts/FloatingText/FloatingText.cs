@@ -11,6 +11,8 @@ public class FloatingText : MonoBehaviour
     public Vector3 motion;
     public float duration;
     public float lastShown;
+
+
     
     public void Set(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
@@ -19,30 +21,30 @@ public class FloatingText : MonoBehaviour
         this.txt.color = color;
         this.motion = motion;
         this.duration = duration;
-        this.go.transform.position = Camera.main.WorldToScreenPoint(position);
+        this.go.transform.position = position;
     }
 
     public void Show()
     {
         this.active = true;
         this.lastShown = Time.time;
-        this.go.SetActive(this.active);
     }
 
     public void Hide()
     {
         this.active = false;
-        this.go.SetActive(this.active);
+        Destroy(this.go);
     }
 
     public void UpdateFloatingText()
     {
         if (!this.active)
             return;
-
+        
         if (Time.time - this.lastShown > this.duration)
             this.Hide();
 
         this.go.transform.position += this.motion * Time.deltaTime;
+        
     }
 }

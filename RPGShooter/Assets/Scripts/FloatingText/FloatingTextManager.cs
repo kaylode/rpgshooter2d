@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class FloatingTextManager : MonoBehaviour
-    /*
-     * Observer Design Pattern
-     */
 {
 
     public GameObject textContainer;
@@ -22,17 +19,10 @@ public class FloatingTextManager : MonoBehaviour
 
     private FloatingText GetFloatingText()
     {
-        FloatingText txt = floatingTexts.Find(t => !t.active);
-
-        if (txt == null)
-        {
-            txt = new FloatingText();
-            txt.go = Instantiate(this.textPrefab);
-            txt.go.transform.SetParent(this.textContainer.transform);
-            txt.txt = txt.go.GetComponent<Text>();
-
-            floatingTexts.Add(txt);
-        }
+        FloatingText txt = new FloatingText();
+        txt.go = Instantiate(this.textPrefab, this.textContainer.transform);
+        txt.txt = txt.go.GetComponent<Text>();
+        floatingTexts.Add(txt);
         return txt;
     }
 
@@ -41,6 +31,7 @@ public class FloatingTextManager : MonoBehaviour
         foreach (FloatingText txt in this.floatingTexts)
         {
             txt.UpdateFloatingText();
+            Debug.Log("Update text: " + txt.txt);
         }
     }
 }
