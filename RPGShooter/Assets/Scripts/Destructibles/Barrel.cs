@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UtilityFunction;
 
 public class Barrel : Destructible
 {
     const string TAG = "Barrel";
     const string COLLECTED_ANIM = "onDestroyed";
 
-    List<GameObject> nearObjects = new List<GameObject>();
+    public float damage = 70;
+    
+    private List<Damageable> nearbyDamageableObjects = new List<Damageable>();
     protected Animator animator;
 
     protected override void Start()
@@ -28,7 +29,16 @@ public class Barrel : Destructible
     protected override void OnDestroyed()
     {
         this.animator.SetTrigger(COLLECTED_ANIM);
+        this.DamageNearby();
         Destroy(gameObject, 1f);
+    }
+
+    protected void DamageNearby()
+    {
+        foreach (Damageable obj in this.nearbyDamageableObjects)
+        {
+            obj.GetDamaged(this.damage);
+        }
     }
 
     public override void GetDamaged(float value)
@@ -37,19 +47,19 @@ public class Barrel : Destructible
         Debug.Log(TAG + " " + this.health.ToString());
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Damageable>())
         {
-            nearObjects.Add(collision.gameObject);
+            nearbyDamageableObjects.Add(collision.gameObject.GetComponent<Damageable>());
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Damageable>())
         {
-            this.nearObjects.Remove(collision.gameObject);   
+            this.nearbyDamageableObjects.Remove(collision.gameObject.GetComponent<Damageable>());   
         }
     }
     
