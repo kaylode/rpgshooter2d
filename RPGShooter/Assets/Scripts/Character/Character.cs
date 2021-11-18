@@ -1,23 +1,31 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class Character : MonoBehaviour
+public abstract class Character : Damageable
 {
-    public float health = 100f;
-    public float maxHealth = 100f;
-    public float shield = 0f;
-    public float speed = 3f;
-    public float damage = 3f;
+    public float maxHealth;
+    public float shield;
+    public float speed;
+    public float damage;
 
     protected Animator animator;
     protected Rigidbody2D rb;
 
-    protected abstract void Move();
-    protected abstract void Attack();
-    protected abstract void Die();
-
-    protected virtual void Start()
+    protected virtual void Move() { }
+    protected virtual void Attack() { }
+    protected virtual void Die() { }
+    protected override void Update()
     {
+        base.Update();
+        if (this.health < 0f)
+        {
+            this.Die();
+        }
+    }
+
+    protected override void Start()
+    {
+        base.Start();
         this.rb = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
     }

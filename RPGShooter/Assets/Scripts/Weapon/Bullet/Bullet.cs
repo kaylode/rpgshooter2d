@@ -3,12 +3,15 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 
-	public float damage = 20f;
+	public float damage;
 	public GameObject hitEffect;
 
-	void Start() {}
+	private void DealDamage(Damageable target)
+    {
+		target.GetDamaged(this.damage);
+	}
 
-	void OnCollisionEnter2D(Collision2D collision) {
+	private void OnCollisionEnter2D(Collision2D collision) {
 
 		if (collision.gameObject.tag == "Wall")
 		{
@@ -17,17 +20,17 @@ public class Bullet : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		if (collision.gameObject.tag == "Enemy")
+		else if (collision.gameObject.GetComponent<Damageable>())
 		{
 			GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
 			Destroy(effect, 1f);
+			DealDamage(collision.gameObject.GetComponent<Damageable>());
 			Destroy(gameObject);
-			Destroy(collision.gameObject);
 		}
 
-		if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bullet")
+		else
 		{
-			Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), this.GetComponent<Collider2D>(), true);
 		}
 
 	}

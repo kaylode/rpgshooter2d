@@ -6,14 +6,14 @@ public class Player : Character
 	private Vector2 movement;
 	private Weapon weapon;
 
-	void Start()
+	 protected override void Start()
 	{
 		base.Start();
 		this.weapon = GetComponentInChildren<Weapon>();
 	}
 
 	// Update is called once per frame
-	void Update()
+	protected override void Update()
 	{
 		this.movement.x = Input.GetAxisRaw("Horizontal");
 		this.movement.y = Input.GetAxisRaw("Vertical");

@@ -3,12 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(Shootable))]
 public class Gun : Weapon
 {
     public Shootable shooter;
-    // Start is called before the first frame update
-    void Start(){}
 
     protected override void UpdateDurability(float value)
     {

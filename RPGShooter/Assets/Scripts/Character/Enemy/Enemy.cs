@@ -3,9 +3,11 @@ using System.Collections;
 
 public class Enemy : Character 
 {
+	const string TAG = "Zombie";
 	private GameObject player;
 
-	void Start() {
+	protected override void Start()
+	{
 		base.Start();
 		player = GameObject.FindGameObjectWithTag ("Player");
 	}
@@ -30,18 +32,12 @@ public class Enemy : Character
 
 	protected override void Die()
 	{
-		return;
+		Destroy(gameObject);
 	}
 
-	/*
-	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.gameObject.tag == "Bullet") {
-			BulletController bullet = collision.gameObject.GetComponent<BulletController>();
-			Debug.Log("Health is: " + health);
-			health -= bullet.damage;
-			healthBar.setHealth(health);
-			Destroy (collision.gameObject);
-		}
+	public override void GetDamaged(float value)
+	{
+		this.health -= value;
+		Debug.Log(TAG + " " + this.health.ToString());
 	}
-	*/
 }
