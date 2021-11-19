@@ -1,0 +1,96 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using CodeMonkey.Utils;
+
+public class EnemyAI : MonoBehaviour
+{
+    private enum State
+    {
+        RoamingState,
+        ChaseState,
+        AttackState
+    }
+
+    private float RoamingRange;
+    private float ChaseRange;
+    private float AttackRange;
+
+    private Enemy instance;
+    private Vector3 startPosition;
+    private Vector3 roamPosition;
+    private State currentState;
+
+    private void Awake()
+    {
+        this.instance = GetComponent<Enemy>();
+        this.currentState = State.RoamingState;
+    }
+
+    private void Start()
+    {
+        startPosition = transform.position;
+        roamPosition = GetRoamingPosition();
+    }
+
+    private void Update()
+    {
+        switch (currentState)
+        {
+            case State.RoamingState:
+                RoamingAround();
+                FindTarget();
+                break;
+
+            case State.ChaseState:
+                ChaseTarget();
+                break;
+            case State.AttackState:
+                break;
+        }
+        
+    }
+
+
+    private Vector3 GetRoamingPosition()
+    {
+        return startPosition + UtilsClass.GetRandomDir() * Random.Range(3f, 2f);
+    }
+
+    private void RoamingAround()
+    {
+        this.instance.MoveTo(roamPosition);
+        float reachedPositionDistance = 1f;
+        if (Vector3.Distance(transform.position, roamPosition) < reachedPositionDistance)
+        {
+            roamPosition = GetRoamingPosition();
+        }
+    }
+
+    private void FindTarget()
+    {
+        float targetRange = 5f;
+        float distanceFromPlayer = GetDistanceFromPlayer();
+        if (distanceFromPlayer < targetRange)
+        {
+            currentState = State.ChaseState;
+        }
+    }
+
+    protected float GetDistanceFromPlayer(Player player)
+    {
+        return Vector3.Distance(transform.position, player.GetPosition());
+    }
+
+    protected void ChaseTarget()
+    {
+        this.instance.MoveTo(Player.instance.GetPosition());
+
+        float distanceFromPlayer = GetDistanceFromPlayer();
+
+        if (distanceFromPlayer < AttackRange)
+        {
+
+        }
+    }
+}

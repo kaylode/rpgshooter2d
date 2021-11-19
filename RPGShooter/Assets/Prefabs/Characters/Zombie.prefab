@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 7502841476963378592}
   - component: {fileID: 7502841476963378605}
   - component: {fileID: 7502841476963378606}
-  - component: {fileID: -4710923316402667087}
   - component: {fileID: 3006663553424825658}
+  - component: {fileID: 8121194165858219847}
+  - component: {fileID: 606428738232751675}
   m_Layer: 13
   m_Name: Zombie
   m_TagString: Enemy
@@ -154,23 +155,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.33}
   m_EdgeRadius: 0
---- !u!114 &-4710923316402667087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502841476963378594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afee15e50161845e08cf3640d4c8d45c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  maxHealth: 50
-  shield: 0
-  speed: 0.6
-  damage: 5
 --- !u!210 &3006663553424825658
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -182,3 +166,35 @@ SortingGroup:
   m_SortingLayerID: -44025399
   m_SortingLayer: 2
   m_SortingOrder: 2
+--- !u!114 &8121194165858219847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502841476963378594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ab55b2e9c4adf47a3816a837ece716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  shield: 0
+  speed: 5
+  damage: 30
+--- !u!114 &606428738232751675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502841476963378594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6f60cc17b28704c80a3a61c92ef536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoamingRange: 4
+  ChaseRange: 8
+  StopChaseRange: 15
+  AttackRange: 4

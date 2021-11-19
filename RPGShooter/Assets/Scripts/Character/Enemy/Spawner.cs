@@ -5,7 +5,7 @@ public class Spawner : MonoBehaviour {
 
 	public GameObject entity;
 
-	[Range(0.1f, 10f)]
+	[Range(1f, 200f)]
 	public float rateOfSpawn = 1f;
 
 	private float timer = 0f;

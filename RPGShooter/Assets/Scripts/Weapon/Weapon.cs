@@ -47,7 +47,7 @@ public abstract class Weapon : Collectible
             Player player = collision.GetComponent<Player>();
             this.Attach(player);
 
-            player.equipWeapon(this);
+            player.EquipWeapon(this);
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }

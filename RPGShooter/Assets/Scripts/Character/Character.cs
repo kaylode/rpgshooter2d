@@ -11,7 +11,7 @@ public abstract class Character : Damageable
     protected Rigidbody2D rb;
 
     protected virtual void Move() { }
-    protected virtual void Attack() { }
+    public virtual void Attack(Damageable target) { }
     protected virtual void Die() { }
     protected override void Update()
     {
@@ -29,5 +29,8 @@ public abstract class Character : Damageable
         this.animator = GetComponent<Animator>();
     }
 
-
+    public virtual Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 }

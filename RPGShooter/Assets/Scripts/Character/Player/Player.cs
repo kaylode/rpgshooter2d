@@ -7,7 +7,18 @@ public class Player : Character
 	private Vector2 movement;
 	private Weapon weapon;
 
-	 protected override void Start()
+	public static Player instance;
+	private void Awake()
+	{
+		if (Player.instance != null)
+		{
+			Destroy(gameObject);
+		}
+		instance = this;
+	}
+
+
+	protected override void Start()
 	{
 		base.Start();
 		this.weapon = GetComponentInChildren<Weapon>();
@@ -16,11 +27,12 @@ public class Player : Character
 	// Update is called once per frame
 	protected override void Update()
 	{
+		base.Update();
 		this.movement.x = Input.GetAxisRaw("Horizontal");
 		this.movement.y = Input.GetAxisRaw("Vertical");
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
-		Debug.Log(TAG + this.GetHealth().ToString());
+		// Debug.Log(TAG + this.GetHealth().ToString());
 	}
 
     private void FixedUpdate()
@@ -43,7 +55,7 @@ public class Player : Character
 		}
 	}
 
-	public void equipWeapon(Weapon _weapon)
+	public void EquipWeapon(Weapon _weapon)
     {
 		if (this.weapon != null)
         {
@@ -58,13 +70,13 @@ public class Player : Character
 		this.rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
 	}
 
-	protected override void Attack()
-	{
-		return;
-	}
-
 	protected override void Die()
 	{
-		return;
+		this.animator.Play("Die");
+
+		//Wait for 2 seconds
+		new WaitForSecondsRealtime(6);
+
+		GameManager.instance.LoadScene(2);
 	}
 }

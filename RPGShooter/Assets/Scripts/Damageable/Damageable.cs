@@ -5,11 +5,10 @@ using UnityEngine;
 public class Damageable : MonoBehaviour
 {
     public float maxHealth;
-    protected HealthBar healthBar;
+    protected HealthBar healthBar = new HealthBar();
 
     protected virtual void Start() 
     {
-        healthBar = new HealthBar();
         healthBar.Initialize(maxHealth);
     }
     protected virtual void Update() { }
