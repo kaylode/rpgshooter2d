@@ -22,7 +22,7 @@ public class Chest : Collectible
         {
             collected = true;
             animator.SetTrigger(COLLECTED_ANIM);
-            // GameManager.instance.ShowText("Open chest !", 100, Color.yellow, transform.position, Vector3.up, 2.0f);
+            GameManager.instance.ShowText("+8 Coin !", 100, Color.yellow, transform.position + new Vector3(0.5f, 1.75f, 0), Vector3.up, 2.0f);
         }
     }
 }

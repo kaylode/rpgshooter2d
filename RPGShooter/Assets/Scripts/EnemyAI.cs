@@ -47,7 +47,8 @@ public class EnemyAI : MonoBehaviour
                 ChaseTarget(target);
                 break;
             case State.AttackState:
-                AttackTarget(target);
+                ChaseTarget(target);
+                //AttackTarget(target);
                 break;
 
         }
@@ -94,8 +95,8 @@ public class EnemyAI : MonoBehaviour
         this.instance.MoveTo(player.GetPosition());
     }
 
-    protected void AttackTarget(Player player)
+    /*protected void AttackTarget(Player player)
     {
         this.instance.Attack(player);
-    }
+    }*/
 }

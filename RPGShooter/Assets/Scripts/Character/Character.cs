@@ -11,7 +11,7 @@ public abstract class Character : Damageable
     protected Rigidbody2D rb;
 
     protected virtual void Move() { }
-    public virtual void Attack(Damageable target) { }
+    protected virtual void Attack(Damageable target) { }
     protected virtual void Die() { }
     protected override void Update()
     {

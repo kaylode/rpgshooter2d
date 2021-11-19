@@ -25,4 +25,14 @@ public class Damageable : MonoBehaviour
     {
         return this.maxHealth;
     }
+
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
+
+    protected virtual void OnCollisionExit2D(Collision2D collision)
+    {
+
+    }
 }

@@ -31,7 +31,6 @@ public class FloatingTextManager : MonoBehaviour
         foreach (FloatingText txt in this.floatingTexts)
         {
             txt.UpdateFloatingText();
-            Debug.Log("Update text: " + txt.txt);
         }
     }
 }
