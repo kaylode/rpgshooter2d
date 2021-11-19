@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour
         instance = this;
         // Prevent being destroyed between scenes
         DontDestroyOnLoad(gameObject);
-        
+        PlaySound("Windless Slopes");
     }
 
     public void PlaySound(string name)
