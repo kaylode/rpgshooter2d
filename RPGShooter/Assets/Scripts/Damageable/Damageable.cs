@@ -16,6 +16,10 @@ public class Damageable : MonoBehaviour
     {
         this.healthBar.UpdateHealth(-value);
     }
+    public virtual void RestoreHealth(float value)
+    {
+        this.healthBar.UpdateHealth(value);
+    }
 
     public virtual float GetHealth()
     {
