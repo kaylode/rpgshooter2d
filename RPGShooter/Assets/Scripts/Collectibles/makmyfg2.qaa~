@@ -5,14 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     protected bool collected=false;
-    protected BoxCollider2D boxCollider;
-    protected Sprite sprite;
-
-    protected virtual void Start() 
-    {
-        boxCollider = GetComponent<BoxCollider2D>();
-        sprite = GetComponent<SpriteRenderer>().sprite;
-    }
+    protected virtual void Start() { }
     protected virtual void Update() { }
 
     protected void OnCollisionEnter2D(Collision2D collision)
@@ -23,7 +16,7 @@ public class Collectible : MonoBehaviour
         }
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected virtual OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
@@ -34,10 +27,5 @@ public class Collectible : MonoBehaviour
     protected virtual void OnCollect()
     {
         this.collected = true;
-    }
-
-    public Sprite GetSprite()
-    {
-        return this.sprite;
     }
 }

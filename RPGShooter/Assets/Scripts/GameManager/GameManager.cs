@@ -17,16 +17,22 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public FloatingTextManager floatingTextManager;
 
-    public Player player;
     public float playerHealth;
     public int playerSkin;
-    public int coin;
     public int playerWeapon;
+    public int coin = 0;
+    public int speed;
 
+
+    public int GetCoin()
+    {
+        return this.coin;
+    }
 
     // Save game state
     public void SaveState()

@@ -9,20 +9,22 @@ public class Sound
     private AudioClip clip;
     private float volume = 0.5f;
     private float pitch = 0.5f;
-
-    public Sound(string name, AudioSource source, AudioClip clip)
+    private bool isLoop = false;
+    public Sound(string name, AudioSource source, AudioClip clip, bool loop=false)
     {
         this.name = name;
         this.source = source;
         this.clip = clip;
-        SetSource(clip, this.pitch, this.volume);
+        this.isLoop = loop;
+        SetSource(clip, this.pitch, this.volume, loop);
     }
 
-    public void SetSource(AudioClip clip, float pitch, float volume)
+    public void SetSource(AudioClip clip, float pitch, float volume, bool loop)
     {
         this.source.clip = clip;
         this.source.pitch = pitch;
         this.source.volume = volume;
+        this.source.loop = loop;
     }
 
     public void SetPitch(float pitch)

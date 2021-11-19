@@ -40,7 +40,7 @@ public abstract class Weapon : Collectible
         this.transform.localPosition = new Vector3(0.25f, 0.5f, 0f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name.Equals("Player"))
         {
@@ -48,6 +48,7 @@ public abstract class Weapon : Collectible
             this.Attach(player);
 
             player.EquipWeapon(this);
+            player.AddItemToInventory(this);
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }

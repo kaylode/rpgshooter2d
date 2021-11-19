@@ -10,19 +10,15 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
+        // Prevent being destroyed between scenes
+        DontDestroyOnLoad(gameObject);
 
         if (SoundManager.instance != null)
         {
             Destroy(gameObject);
         }
-        else
-        {
-            GetAllSoundsFromFolder();
-        }
         instance = this;
-        // Prevent being destroyed between scenes
-        DontDestroyOnLoad(gameObject);
-        
+        GetAllSoundsFromFolder();
     }
 
     public void PlaySound(string name)
@@ -32,7 +28,7 @@ public class SoundManager : MonoBehaviour
             if (s.name == name)
             {
                 s.Play();
-                break;
+                return;
             }
         }
         Debug.LogWarning("Sound: " + name + " not found");

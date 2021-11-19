@@ -7,6 +7,9 @@ public class Player : Character
 	private Vector2 movement;
 	private Weapon weapon;
 
+	public UI_Inventory uiInventory;
+	private Inventory inventory;
+
 	public static Player instance;
 	private void Awake()
 	{
@@ -15,6 +18,9 @@ public class Player : Character
 			Destroy(gameObject);
 		}
 		instance = this;
+
+		inventory = new Inventory();
+		uiInventory.SetInventory(inventory);
 	}
 
 
@@ -32,7 +38,6 @@ public class Player : Character
 		this.movement.y = Input.GetAxisRaw("Vertical");
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
-		// Debug.Log(TAG + this.GetHealth().ToString());
 	}
 
     private void FixedUpdate()
@@ -59,10 +64,16 @@ public class Player : Character
     {
 		if (this.weapon != null)
         {
-			Destroy(this.weapon.gameObject);
+			this.weapon.gameObject.SetActive(false);
 		}
 		this.weapon = _weapon;
 		_weapon.transform.parent = this.transform;
+	}
+
+	public void AddItemToInventory(Collectible item)
+    {
+		this.inventory.AddItem(item);
+		this.uiInventory.SetInventory(this.inventory);
 	}
 
 	protected override void Move()
