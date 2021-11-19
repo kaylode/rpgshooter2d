@@ -37,7 +37,7 @@ public class Enemy : Character
 
 	public override void GetDamaged(float value)
 	{
-		this.health -= value;
-		Debug.Log(TAG + " " + this.health.ToString());
+		this.healthBar.UpdateHealth(-value);
+		Debug.Log(TAG + " " + this.healthBar.GetHealth().ToString());
 	}
 }

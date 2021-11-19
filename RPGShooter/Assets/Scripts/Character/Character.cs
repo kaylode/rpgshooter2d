@@ -3,7 +3,6 @@ using System.Collections;
 
 public abstract class Character : Damageable
 {
-    public float maxHealth;
     public float shield;
     public float speed;
     public float damage;
@@ -17,7 +16,7 @@ public abstract class Character : Damageable
     protected override void Update()
     {
         base.Update();
-        if (this.health < 0f)
+        if (this.healthBar.GetHealth() <= 0f)
         {
             this.Die();
         }

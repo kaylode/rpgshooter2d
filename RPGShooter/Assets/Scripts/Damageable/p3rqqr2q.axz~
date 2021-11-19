@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// [RequireComponent(typeof(HealthBar))]
+public class Damageable : MonoBehaviour
+{
+    public HealthBar healthBar;
+
+    protected virtual void Start() 
+    {
+        if (GetComponent<SpriteRenderer>())
+        {
+
+            //float halfHeight = GetComponent<SpriteRenderer>().bounds.size.y + 0.01f;
+            //float halfWidth = GetComponent<SpriteRenderer>().bounds.size.x / 2;
+           // healthBar.transform.position = new Vector3(halfWidth, halfHeight, 1);
+        }
+    }
+    protected virtual void Update() { }
+    public virtual void GetDamaged(float value) 
+    {
+        this.healthBar.UpdateHealth(-value);
+    }
+}

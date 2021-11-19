@@ -8,7 +8,7 @@ public class Barrel : Destructible
     const string COLLECTED_ANIM = "onDestroyed";
 
     public float damage = 70;
-    
+
     private List<Damageable> nearbyDamageableObjects = new List<Damageable>();
     protected Animator animator;
 
@@ -20,7 +20,7 @@ public class Barrel : Destructible
 
     protected override void Update()
     {
-        if (this.health <= 0f)
+        if (this.healthBar.GetHealth() <= 0f)
         {
             this.OnDestroyed();
         } 
@@ -43,14 +43,15 @@ public class Barrel : Destructible
 
     public override void GetDamaged(float value)
     {
-        this.health -= value;
-        Debug.Log(TAG + " " + this.health.ToString());
+        this.healthBar.UpdateHealth(-value);
+        Debug.Log(TAG + " " + this.healthBar.GetHealth().ToString());
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<Damageable>())
         {
+            Debug.Log("OnCollisionEnter" + collision.gameObject);
             nearbyDamageableObjects.Add(collision.gameObject.GetComponent<Damageable>());
         }
     }
@@ -59,6 +60,7 @@ public class Barrel : Destructible
     {
         if (collision.gameObject.GetComponent<Damageable>())
         {
+            Debug.Log("OnCollisionExit" + collision.gameObject);
             this.nearbyDamageableObjects.Remove(collision.gameObject.GetComponent<Damageable>());   
         }
     }

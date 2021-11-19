@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player : Character
 {
+	const string TAG = "Player";
 	private Vector2 movement;
 	private Weapon weapon;
 
@@ -19,6 +20,7 @@ public class Player : Character
 		this.movement.y = Input.GetAxisRaw("Vertical");
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
+		Debug.Log(TAG + this.GetHealth().ToString());
 	}
 
     private void FixedUpdate()

@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class Damageable : MonoBehaviour
 {
-    public float health;
-    protected virtual void Start() { }
+    public float maxHealth;
+    protected HealthBar healthBar;
+
+    protected virtual void Start() 
+    {
+        healthBar = new HealthBar();
+        healthBar.Initialize(maxHealth);
+    }
     protected virtual void Update() { }
     public virtual void GetDamaged(float value) 
     {
-        this.health -= value;
-
+        this.healthBar.UpdateHealth(-value);
     }
 
+    public virtual float GetHealth()
+    {
+        return this.healthBar.GetHealth();
+    }
+    public virtual float GetMaxHealth()
+    {
+        return this.maxHealth;
+    }
 }
