@@ -5,6 +5,8 @@ using System.Collections;
 public class Enemy : Character 
 {
 
+	public GameObject reward;
+	public float dropRate;
 	public float attackRate = 0.3f;
 	protected float lastAttack = 0f;
 
@@ -17,6 +19,15 @@ public class Enemy : Character
 
 	protected override void Die()
 	{
+		if (reward)
+        {
+			float rand = Random.Range(0f, 1f);
+			if (rand <= this.dropRate)
+			{
+				GameObject obj = Instantiate(reward, transform.position, transform.rotation);
+				obj.transform.position = transform.position;
+			}
+		}
 		Destroy(gameObject);
 	}
 
