@@ -19,6 +19,7 @@ public class Shootable : MonoBehaviour
 		if (Time.time > fireRate + lastShot)
 		{
 			GameObject newBullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+			SoundManager.PlaySound("lazer");
 			Rigidbody2D rb = newBullet.GetComponent<Rigidbody2D>();
 			rb.AddForce(shootingForce * firePoint.right, ForceMode2D.Impulse);
 			Destroy(newBullet, 5f);

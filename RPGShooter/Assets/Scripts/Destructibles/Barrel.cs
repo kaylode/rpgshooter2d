@@ -29,6 +29,7 @@ public class Barrel : Destructible
     protected override void OnDestroyed()
     {
         this.animator.SetTrigger(COLLECTED_ANIM);
+        SoundManager.PlaySound("explosion");
         this.DamageNearby();
         Destroy(gameObject, 1f);
     }
@@ -44,7 +45,7 @@ public class Barrel : Destructible
     public override void GetDamaged(float value)
     {
         this.healthBar.UpdateHealth(-value);
-        Debug.Log(TAG + " " + this.healthBar.GetHealth().ToString());
+        //Debug.Log(TAG + " " + this.healthBar.GetHealth().ToString());
     }
     
     private void OnTriggerEnter2D(Collider2D collision)
