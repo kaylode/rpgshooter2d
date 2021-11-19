@@ -38,6 +38,6 @@ public class Sound
     }
     public void Play()
     {
-        this.source.Play();
+        this.source.PlayOneShot(this.clip);
     }
 }
