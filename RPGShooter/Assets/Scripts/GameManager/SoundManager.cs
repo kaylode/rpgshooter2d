@@ -1,36 +1,44 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip laserSound, explosionSound;
-    static AudioSource audioSrc;
-    // Start is called before the first frame update
-    void Start()
-    {
-        laserSound = Resources.Load<AudioClip>("Lazer1");
-        explosionSound = Resources.Load<AudioClip>("Explosion");
+    public static SoundManager instance;
+    List<Sound> sounds = new List<Sound>();
 
-        audioSrc = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
-    }
-
-    public static void PlaySound(string clip)
-    {
-        switch(clip)
+        if (SoundManager.instance != null)
         {
-            case "lazer":
-                audioSrc.PlayOneShot(laserSound);
+            Destroy(gameObject);
+        }
+        instance = this;
+        GetAllSoundsFromFolder();
+    }
+
+    public void PlaySound(string name)
+    {
+        foreach(Sound s in sounds)
+        {
+            if (s.name == name)
+            {
+                s.Play();
                 break;
-            case "explosion":
-                audioSrc.PlayOneShot(explosionSound);
-                break;
+            }
+        }
+    }
+
+    private void GetAllSoundsFromFolder()
+    {
+        UnityEngine.Object[] audioClips = Resources.LoadAll("Audio", typeof(AudioClip));
+
+        foreach(UnityEngine.Object obj in audioClips)
+        {
+            AudioSource source = gameObject.AddComponent<AudioSource>();
+            Sound sound = new Sound(obj.name, source, (AudioClip)obj);
+            sounds.Add(sound);
         }
     }
 }
