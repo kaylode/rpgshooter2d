@@ -41,8 +41,11 @@ public class FloatingText : MonoBehaviour
         if (!this.active)
             return;
         
-        if (Time.time - this.lastShown > this.duration)
-            this.Hide();
+        if (this.duration > 0)
+        {
+            if (Time.time - this.lastShown > this.duration)
+                this.Hide();
+        }
 
         this.go.transform.position += this.motion * Time.deltaTime;
         

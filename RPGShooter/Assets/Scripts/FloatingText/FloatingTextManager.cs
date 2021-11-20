@@ -10,11 +10,12 @@ public class FloatingTextManager : MonoBehaviour
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
 
-    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    public FloatingText Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         FloatingText floatingText = this.GetFloatingText();
         floatingText.Set(msg, fontSize, color, position, motion, duration);
         floatingText.Show();
+        return floatingText;
     }
 
     private FloatingText GetFloatingText()

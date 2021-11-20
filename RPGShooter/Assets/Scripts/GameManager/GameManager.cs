@@ -64,9 +64,9 @@ public class GameManager : MonoBehaviour
     }
 
     // Floating text
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
+    public FloatingText ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
-        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+        return floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
     }
 
     public void LoadScene(int level)

@@ -32,7 +32,7 @@ public class SoundManager : MonoBehaviour
             if (s.name == name)
             {
                 s.Play();
-                break;
+                return;
             }
         }
         Debug.LogWarning("Sound: " + name + " not found");
