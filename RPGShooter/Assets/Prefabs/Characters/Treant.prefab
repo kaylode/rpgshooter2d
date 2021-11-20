@@ -197,4 +197,7 @@ MonoBehaviour:
   shield: 0
   speed: 2
   damage: 50
+  reward: {fileID: 0}
+  dropRate: 0
   attackRate: 0.2
+  pushForce: 10000

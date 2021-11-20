@@ -181,11 +181,11 @@ MonoBehaviour:
   maxHealth: 50
   shield: 0
   speed: 2
-  damage: 30
+  damage: 15
   reward: {fileID: 6144220081261200847, guid: 3db631bf27bef0b418b5e63d88712259, type: 3}
   dropRate: 0.9
   attackRate: 0.3
-  pushForce: 3
+  pushForce: 5000
 --- !u!114 &7695883497098139457
 MonoBehaviour:
   m_ObjectHideFlags: 0
