@@ -41,10 +41,6 @@ public class Player : Character
 		this.movement.y = Input.GetAxisRaw("Vertical");
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
-	}
-
-    private void FixedUpdate()
-    {
 		if (this.moveAble)
 			this.Move();
 	}
