@@ -22,12 +22,23 @@ public class GameManager : MonoBehaviour
 
     public FloatingTextManager floatingTextManager;
 
+    public Player player;
     public float playerHealth;
     public int playerSkin;
     public int playerWeapon;
     public int coin = 0;
     public int speed;
 
+
+    public void FreezeAllMovement()
+    {
+        player.FreezeMovement();
+    }
+
+    public void UnFreezeAllMovement()
+    {
+        player.UnFreezeMovement();
+    }
 
     public int GetCoin()
     {

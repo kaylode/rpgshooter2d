@@ -10,6 +10,8 @@ public abstract class Character : Damageable
     protected Animator animator;
     protected Rigidbody2D rb;
 
+    protected bool moveAble = true;
+
     protected virtual void Move() { }
     protected virtual void Attack(Damageable target) { }
     protected virtual void Die() { }
@@ -32,5 +34,14 @@ public abstract class Character : Damageable
     public virtual Vector3 GetPosition()
     {
         return transform.position;
+    }
+
+    public void FreezeMovement()
+    {
+        this.moveAble = false;
+    }
+    public void UnFreezeMovement()
+    {
+        this.moveAble = true;
     }
 }

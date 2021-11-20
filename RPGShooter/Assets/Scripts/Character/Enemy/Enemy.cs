@@ -8,13 +8,17 @@ public class Enemy : Character
 	public GameObject reward;
 	public float dropRate;
 	public float attackRate = 0.3f;
+	public float pushForce = 30000f;
 	protected float lastAttack = 0f;
 
 	public void MoveTo(Vector3 position)
 	{
-		Vector3 direction = (position - transform.position).normalized;
-		Vector2 headingDirection = new Vector2(direction.x * speed, direction.y * speed);
-		this.rb.velocity = headingDirection;
+		if (this.moveAble)
+		{
+			Vector3 direction = (position - transform.position).normalized;
+			Vector2 headingDirection = new Vector2(direction.x * speed, direction.y * speed);
+			this.rb.velocity = headingDirection;
+		}
 	}
 
 	protected override void Die()
@@ -43,8 +47,13 @@ public class Enemy : Character
 		{
 			Vector3 playerPosition = target.transform.position;
 			Vector3 direction = (playerPosition - transform.position).normalized;
-			Vector2 headingDirection = new Vector2(direction.x * this.speed * 1.25f, direction.y * this.speed * 1.25f);
-			this.rb.velocity = headingDirection;
+
+			// Sound effect
+			SoundManager.instance.PlaySound("Punch");
+
+			// Add force to player
+			target.GetComponent<Rigidbody2D>().AddRelativeForce(direction * this.pushForce);
+
 
 			target.GetDamaged(this.damage);
 			this.lastAttack = Time.time;

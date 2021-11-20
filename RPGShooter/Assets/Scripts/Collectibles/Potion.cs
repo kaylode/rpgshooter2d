@@ -28,9 +28,9 @@ public class Potion : Collectible
     {
         this.boxCollider.enabled = false;
         animator.SetTrigger(COLLECTED_ANIM);
+        SoundManager.instance.PlaySound("Pickup");
         string text = "+" + value.ToString() + " hp";
         GameManager.instance.ShowText(text, 100, Color.magenta, transform.position + new Vector3(0.5f, 1.75f, 0), Vector3.up, 1.5f);
-    
         Destroy(gameObject, 1f);
     }
 }

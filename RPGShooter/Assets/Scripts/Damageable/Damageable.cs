@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Damageable : MonoBehaviour
+public class Damageable : Collidable
 {
     public float maxHealth;
     protected HealthBar healthBar = new HealthBar();
@@ -28,15 +28,5 @@ public class Damageable : MonoBehaviour
     public virtual float GetMaxHealth()
     {
         return this.maxHealth;
-    }
-
-    protected virtual void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
-
-    protected virtual void OnCollisionExit2D(Collision2D collision)
-    {
-
     }
 }

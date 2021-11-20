@@ -4,6 +4,8 @@ using System.Collections;
 public class Player : Character
 {
 	const string TAG = "Player";
+	const string DEATH_ANIM = "onDeath";
+
 	private Vector2 movement;
 	private Weapon weapon;
 
@@ -11,6 +13,7 @@ public class Player : Character
 	private Inventory inventory;
 
 	public static Player instance;
+
 	private void Awake()
 	{
 		if (Player.instance != null)
@@ -42,7 +45,8 @@ public class Player : Character
 
     private void FixedUpdate()
     {
-		this.Move();
+		if (this.moveAble)
+			this.Move();
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
@@ -83,7 +87,7 @@ public class Player : Character
 
 	protected override void Die()
 	{
-		this.animator.Play("Die");
+		this.animator.SetTrigger(DEATH_ANIM);
 
 		//Wait for 2 seconds
 		new WaitForSecondsRealtime(6);
