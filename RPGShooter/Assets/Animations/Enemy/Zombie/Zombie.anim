@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_Zombie_test
+  m_Name: Zombie
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,10 +22,10 @@ AnimationClip:
     - time: 0
       value: {fileID: 6530423419934207551, guid: 36e93b89f6b859b4fa6cb59ce92635be,
         type: 3}
-    - time: 0.083333336
+    - time: 0.25
       value: {fileID: -4617475368665073608, guid: 36e93b89f6b859b4fa6cb59ce92635be,
         type: 3}
-    - time: 0.16666667
+    - time: 0.5
       value: {fileID: 2140889717217651020, guid: 36e93b89f6b859b4fa6cb59ce92635be,
         type: 3}
     attribute: m_Sprite
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.5833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
