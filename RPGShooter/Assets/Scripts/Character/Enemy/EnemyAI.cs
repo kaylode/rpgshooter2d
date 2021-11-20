@@ -19,7 +19,9 @@ public class EnemyAI : MonoBehaviour
     private Enemy instance;
     private Vector3 startPosition;
     private Vector3 roamPosition;
+    private float timer;
     private State currentState;
+
 
     private void Awake()
     {
@@ -71,15 +73,18 @@ public class EnemyAI : MonoBehaviour
     private Vector3 GetRoamingPosition()
     {
         // Generate random normalized direction
+        timer = Time.time;
         Vector3 randomDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         return startPosition + randomDirection * Random.Range(RoamingRange, RoamingRange);
     }
 
     private void RoamingAround()
     {
+        
         this.instance.MoveTo(roamPosition);
         float reachedPositionDistance = 1f;
-        if (Vector3.Distance(transform.position, roamPosition) < reachedPositionDistance)
+
+        if ((Vector3.Distance(transform.position, roamPosition) < reachedPositionDistance) || (Time.time - timer > 5f))
         {
             roamPosition = GetRoamingPosition();
         }
