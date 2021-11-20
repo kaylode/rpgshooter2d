@@ -42,7 +42,10 @@ public class Player : Character
 		Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		this.UpdatePlayerRotation(mousePosition);
 		if (this.moveAble)
+		{
 			this.Move();
+			this.SwitchWeapon();
+		}
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
@@ -62,11 +65,13 @@ public class Player : Character
 
 	public void EquipWeapon(Weapon _weapon)
     {
-		if (this.weapon != null)
+		if (this.weapon != null && !object.ReferenceEquals(this.weapon, _weapon))
         {
 			this.weapon.gameObject.SetActive(false);
 		}
+
 		this.weapon = _weapon;
+		this.weapon.gameObject.SetActive(true);
 		_weapon.transform.parent = this.transform;
 	}
 
@@ -90,4 +95,31 @@ public class Player : Character
 
 		GameManager.instance.LoadScene(2);
 	}
+
+	protected void SwitchWeapon()
+    {
+		Collectible item = null;
+		if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+			item = this.inventory.GetItem(0);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			item = this.inventory.GetItem(1);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha3))
+		{
+			item = this.inventory.GetItem(2);
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha4))
+		{
+			item = this.inventory.GetItem(3);
+		}
+
+		if (item != null)
+			this.EquipWeapon((Weapon)item);
+    }
 }
