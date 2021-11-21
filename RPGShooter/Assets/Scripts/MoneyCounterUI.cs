@@ -10,7 +10,7 @@ public class MoneyCounterUI : MonoBehaviour
     }
     void Update()
     {
-        moneyText.text = "MONEY: " + Player.Money.ToString();
+        moneyText.text = "MONEY: " + GameManager.instance.GetCoin().ToString();//Player.Money.ToString();
     }
 
 }

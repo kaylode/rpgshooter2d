@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyTriggerZone : TriggerZone
+{
+    protected void override Start()
+    {
+        triggerPoint.OnPlayerEnterTrigger += TriggerFunction;
+    }
+
+    private void EnemyTrigger_TriggerTrap(object sender, System.EventArgs e)
+    {
+        TriggerTrap();
+    }
+
+    private void TriggerTrap()
+    {
+        Vector3 position = GetRandomPosition();
+        Instantiate(enemy, transform.position + position, transform.rotation);
+    }
+
+    private Vector3 GetRandomPosition()
+    {
+        return Random.insideUnitCircle * this.radiusRange;
+    }
+}
