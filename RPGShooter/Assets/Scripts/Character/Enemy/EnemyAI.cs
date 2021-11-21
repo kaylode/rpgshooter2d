@@ -17,8 +17,8 @@ public class EnemyAI : MonoBehaviour
     public float AttackRange = 4f;
 
     private Enemy instance;
-    private Vector3 startPosition;
-    private Vector3 roamPosition;
+    private Vector2 startPosition;
+    private Vector2 roamPosition;
     private float timer;
     private State currentState;
 
@@ -37,7 +37,7 @@ public class EnemyAI : MonoBehaviour
 
     protected virtual void Update()
     {
-        Player target = Player.instance;
+        Player target = GameManager.instance.player;
         this.currentState = GetCurrentState(target);
         switch (this.currentState)
         {
@@ -49,8 +49,7 @@ public class EnemyAI : MonoBehaviour
                 ChaseTarget(target);
                 break;
             case State.AttackState:
-                ChaseTarget(target);
-                //AttackTarget(target);
+                AttackTarget(target);
                 break;
 
         }
@@ -60,7 +59,6 @@ public class EnemyAI : MonoBehaviour
     private State GetCurrentState(Player player)
     {
         float distanceFromPlayer = GetDistanceFromPlayer(player);
-
         if (distanceFromPlayer <= this.AttackRange)
             return State.AttackState;
         else if (distanceFromPlayer <= this.ChaseRange)
@@ -70,11 +68,11 @@ public class EnemyAI : MonoBehaviour
         return State.RoamingState;
     }
 
-    private Vector3 GetRoamingPosition()
+    private Vector2 GetRoamingPosition()
     {
         // Generate random normalized direction
         timer = Time.time;
-        Vector3 randomDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        Vector2 randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         return startPosition + randomDirection * Random.Range(RoamingRange, RoamingRange);
     }
 
@@ -92,7 +90,7 @@ public class EnemyAI : MonoBehaviour
 
     protected float GetDistanceFromPlayer(Player player)
     {
-        return Vector3.Distance(transform.position, player.GetPosition());
+        return Vector2.Distance((Vector2)instance.transform.position, (Vector2)player.GetPosition());
     }
 
     protected void ChaseTarget(Player player)
@@ -100,8 +98,8 @@ public class EnemyAI : MonoBehaviour
         this.instance.MoveTo(player.GetPosition());
     }
 
-    /*protected void AttackTarget(Player player)
+    protected void AttackTarget(Player player)
     {
-        this.instance.Attack(player);
-    }*/
+        this.instance.AttackTo(player);
+    }
 }

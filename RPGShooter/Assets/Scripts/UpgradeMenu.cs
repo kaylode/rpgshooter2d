@@ -2,49 +2,53 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UpgradeMenu : MonoBehaviour
 {
-    [SerializeField]
-    private Text healthText;
-    [SerializeField]
-    private Text speedText;
-    [SerializeField]
-    private Text shieldText;
-    [SerializeField]
-    private Text damageText;
-    [SerializeField]
-    private int upgradeFactor = 10;
-    [SerializeField]
-    private Player stats;
+    private int upgradeFactor = 1;
+    Transform healthTransform;
+    Transform speedTransform;
+    Text healthText;
+    Text speedText;
 
     void OnEnable()
     {
-        stats = (Player)FindObjectOfType(typeof(Player));
+        healthTransform = transform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
+        speedTransform = transform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
+        healthText = healthTransform.gameObject.GetComponent<Text>();
+        speedText = speedTransform.gameObject.GetComponent<Text>();
         UpdateValues();
     }
-    void UpdateValues()
+
+    private void UpdateValues()
     {
-        healthText.text = "HEALTH: " + ((int)stats.maxHealth).ToString();
-        speedText.text = "SPEED: " + ((int)stats.speed).ToString();
-        shieldText.text = "SHIELD: " + ((int)stats.shield).ToString();
-        damageText.text = "DAMAGE: " + ((int)stats.damage).ToString();
+        healthText.text = "HEALTH: " + ((int)GameManager.instance.player.GetMaxHealth()).ToString();
+        speedText.text = "SPEED: " + ((int)GameManager.instance.player.speed).ToString();
     }
     public void UpgradeHealth()
     {
-        stats.maxHealth += upgradeFactor;
+        Debug.Log("Test");
+        GameManager.instance.player.maxHealth += upgradeFactor;
         UpdateValues();
     }
     public void UpgradeSpeed()
     {
-        stats.speed += upgradeFactor;
+        GameManager.instance.player.speed += upgradeFactor;
+        Debug.Log("Test");
+
         UpdateValues();
     }
-    public void UpgradeShield()
+
+    public void Toggle()
     {
-        stats.shield += upgradeFactor;
-        UpdateValues();
+        if (transform.gameObject.activeSelf)
+        {
+            Cursor.visible = false;
+            GameManager.instance.UnFreezeAllMovement();
+        }
+        else
+        {
+            Cursor.visible = true;
+            GameManager.instance.FreezeAllMovement();
+        }
+        transform.gameObject.SetActive(!transform.gameObject.activeSelf);
     }
-    public void UpgradeDamage()
-    {
-        stats.damage += upgradeFactor;
-        UpdateValues();
-    }
+
 }

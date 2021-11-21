@@ -1,0 +1,48 @@
+using UnityEngine;
+using UnityEngine.UI;
+public class UpgradeMenu : MonoBehaviour
+{
+    private Text healthText;
+    private Text speedText;
+    private int upgradeFactor = 1;
+
+    public void Start()
+    {
+        UpdateValues();
+    }
+    void UpdateValues()
+    {
+        healthText.text = "HEALTH: " + ((int)GameManager.instance.player.GetMaxHealth()).ToString();
+        speedText.text = "SPEED: " + ((int)GameManager.instance.player.speed).ToString();
+    }
+    public void UpgradeHealth()
+    {
+        GameManager.instance.player.maxHealth += upgradeFactor;
+        UpdateValues();
+    }
+    public void UpgradeSpeed()
+    {
+        GameManager.instance.player.speed += upgradeFactor;
+        UpdateValues();
+    }
+    public void UpgradeShield()
+    {
+        GameManager.instance.player.shield += upgradeFactor;
+        UpdateValues();
+    }
+    public void UpgradeDamage()
+    {
+        GameManager.instance.player.damage += upgradeFactor;
+        UpdateValues();
+    }
+
+    public void FixedUpdate()
+    {
+            Toggle();
+    }
+
+    public void Toggle()
+    {
+        transform.gameObject.SetActive(!transform.gameObject.activeSelf);
+    }
+}

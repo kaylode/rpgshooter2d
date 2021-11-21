@@ -22,7 +22,8 @@ public class EnemyTriggerZone : TriggerZone
     {
         foreach (GameObject obj in enemyPrefabs)
         {
-            Instantiate(obj, transform.position, transform.rotation);
+            GameObject spawn = Instantiate(obj, transform.position, transform.rotation);
+            spawn.transform.SetParent(this.transform.parent);
         }
     }
 }

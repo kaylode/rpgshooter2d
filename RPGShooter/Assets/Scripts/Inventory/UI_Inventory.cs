@@ -23,7 +23,10 @@ public class UI_Inventory : MonoBehaviour
         {
             Hidden();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) || 
+            Input.GetKeyDown(KeyCode.Alpha2) ||
+            Input.GetKeyDown(KeyCode.Alpha3) ||
+            Input.GetKeyDown(KeyCode.Alpha4))
             Show();
     }
 
@@ -52,7 +55,6 @@ public class UI_Inventory : MonoBehaviour
         float itemSlotCellSize = 125f;
         foreach(Collectible item in this.inventory.GetItemList())
         {
-            Debug.Log(TAG + ": " + item);
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);

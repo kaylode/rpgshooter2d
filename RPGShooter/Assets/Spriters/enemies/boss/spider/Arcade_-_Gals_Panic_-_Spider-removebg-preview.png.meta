@@ -1,0 +1,1176 @@
+fileFormatVersion: 2
+guid: deb38d67d80122b43b5d48dc127df507
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4952994013234542151
+    second: Arcade_-_Gals_Panic_-_Spider-removebg-preview_1
+  - first:
+      213: 6630240366065021607
+    second: Arcade_-_Gals_Panic_-_Spider-removebg-preview_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 189
+        width: 64
+        height: 65
+      alignment: 9
+      pivot: {x: 0.50393105, y: 0.34129733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2304152a36ee58f0800000000000000
+      internalID: -549748967088061650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 196
+        width: 56
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5898577, y: 0.3685379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f6127342d89dce0800000000000000
+      internalID: -1379916624129069257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 197
+        width: 61
+        height: 47
+      alignment: 9
+      pivot: {x: 0.50412464, y: 0.36081582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf72aec46ec4cd0800000000000000
+      internalID: -2572428069115003419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 197
+        width: 56
+        height: 47
+      alignment: 9
+      pivot: {x: 0.45057815, y: 0.36081582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c3823a9e496fa20800000000000000
+      internalID: 3095825525049408579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 198
+        width: 61
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5164985, y: 0.34138158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09f0f7b8ae046e50800000000000000
+      internalID: 6801577455039609101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 193
+        width: 64
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5196562, y: 0.349039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef041776b0c22cc0800000000000000
+      internalID: -3737212850849706001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 189
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c8926d30ddceac0800000000000000
+      internalID: -3824438974996706258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 231
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575071f3165555fa0800000000000000
+      internalID: -5812645867893095051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 194
+        width: 62
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e37d1f885bc7da0800000000000000
+      internalID: -5945677808258302460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 191
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2730a3de3b69ca0800000000000000
+      internalID: -6010418821217422674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 145
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c576edfb9d1b4300800000000000000
+      internalID: 237315961183958468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 146
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca5526805d9f2950800000000000000
+      internalID: 6426528162454526660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 145
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29b460920e923b40800000000000000
+      internalID: 5418567035529771309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 159
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c024d2cbf690bcc80800000000000000
+      internalID: -8301531112624274932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 160
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6a54c71dec383d0800000000000000
+      internalID: -3205491110629234991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 159
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b625f927926b1c700800000000000000
+      internalID: 558928117903610475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56813375d50f4900800000000000000
+      internalID: 670761283820291675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 163
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc822b650c55585a0800000000000000
+      internalID: -6519710600972326708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 160
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8391f3784672b00800000000000000
+      internalID: 803721590550903007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 161
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7485b91fa6de91380800000000000000
+      internalID: -8999901336747419577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 87
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6728adbd9af82820800000000000000
+      internalID: 2893838315984267114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 125
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21939fecc70b908c0800000000000000
+      internalID: -4032497941238695662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 102
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d635503cf096322f0800000000000000
+      internalID: -998839175928786067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebac00bc584e6c10800000000000000
+      internalID: 2048654443427965922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 16
+        width: 144
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb39d752996be8ec0800000000000000
+      internalID: -3562709486328245313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 129
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371f2791d38d167e0800000000000000
+      internalID: -1773899021275696781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 129
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5f094ec9fbd2430800000000000000
+      internalID: 3759871944494740925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 129
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b6573543f7ce00800000000000000
+      internalID: 1065087315503134586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 129
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a15ae948390fe20800000000000000
+      internalID: 3382365517961828958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 95
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1777da47f3dded0800000000000000
+      internalID: -2387682457077452384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 91
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8758a910e97481440800000000000000
+      internalID: 4906750537977464184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 103
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693b0a2d733ba88d0800000000000000
+      internalID: -2843263162392726634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 102
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711e63040ed2c52f0800000000000000
+      internalID: -982860177500348137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 92
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da8bc51d6f59aff0800000000000000
+      internalID: -24383400852092206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 91
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3997b3c18bb921980800000000000000
+      internalID: -8569615925882685037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 91
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d1504b694908f0800000000000000
+      internalID: -573846752523595304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 92
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed5fb310123f0bc0800000000000000
+      internalID: -3814775314727346714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 15
+        width: 95
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184f216129ab9caf0800000000000000
+      internalID: -375563957310393215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 70
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bd5ebe4382a7ca0800000000000000
+      internalID: -6018453744266126444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_91
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 60
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9db86664f8f0b770800000000000000
+      internalID: 8624667014988348828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_92
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 59
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670b06ad4263fa620800000000000000
+      internalID: 2787506226276118646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_93
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 59
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353599716d4ea8180800000000000000
+      internalID: -9112219287860718765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_94
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 60
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf51eefb7986d1a50800000000000000
+      internalID: 6493461238707525115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_95
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 16
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae12060572d99f80800000000000000
+      internalID: -8099211054795317595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_108
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 18
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ba9396791de580800000000000000
+      internalID: -8796346500111484999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_120
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 20
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a8676cb73705190800000000000000
+      internalID: -7975747964625319398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_129
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 21
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f629dddd0a4639a40800000000000000
+      internalID: 5373749422462964335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_143
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 17
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2776610934ed44bb0800000000000000
+      internalID: -4952589308439140494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 16
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9c482ef2e634bb0800000000000000
+      internalID: -4952994013234542151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade_-_Gals_Panic_-_Spider-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 16
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2f2c20c78530c50800000000000000
+      internalID: 6630240366065021607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 98591d4f57b24cb4f9a2802de8a1ed36
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

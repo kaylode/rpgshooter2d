@@ -1,11 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss : Enemy
 {
     public event EventHandler OnDeathTrigger;
+	const string DEATH_ANIM = "onDeath";
+
+	public float shootingForce = 20f;
+	public GameObject bulletPrefab;
 
 	// Trigger the trigger zone
 	protected void InvokeTrigger()
@@ -16,9 +18,9 @@ public class Boss : Enemy
 
 	}
 
-
-	protected override void Die()
+    protected override void Die()
 	{
+		this.animator.SetTrigger(DEATH_ANIM);
 		if (reward)
 		{
 			float rand = UnityEngine.Random.Range(0f, 1f);
@@ -30,5 +32,20 @@ public class Boss : Enemy
 		}
 		InvokeTrigger();
 		Destroy(gameObject);
+	}
+
+	protected override void Attack(Damageable target)
+    {
+		if (Time.time > this.attackRate + this.lastAttack)
+		{
+			GameObject newBullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+			Rigidbody2D rb = newBullet.GetComponent<Rigidbody2D>();
+
+			Vector3 direction = (target.transform.position - transform.position).normalized;
+
+			rb.AddForce(shootingForce * direction, ForceMode2D.Impulse);
+			Destroy(newBullet, 5f);
+			lastAttack = Time.time;
+		}
 	}
 }
