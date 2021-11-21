@@ -45,7 +45,7 @@ public class NPC : Collidable
         }
     }
 
-    protected void Update()
+    protected virtual void Update()
     {
         if (Input.GetKeyDown("space"))
         {
