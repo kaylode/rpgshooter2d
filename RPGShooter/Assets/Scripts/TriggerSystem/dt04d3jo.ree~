@@ -1,0 +1,25 @@
+using System;
+using UnityEngine;
+
+public class TriggerPoint : MonoBehaviour
+{
+    /*
+     * Trigger point to affect a trigger zone
+     */
+    public event EventHandler OnPlayerEnterTrigger;
+
+    protected void InvokeTrigger()
+    {
+        EventHandler handler = OnPlayerEnterTrigger;
+        if (handler != null)
+            handler(this, EventArgs.Empty);
+    }
+
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            InvokeTrigger();
+        }
+    }
+}

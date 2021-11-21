@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5290611455376895196}
   - component: {fileID: 5290611455376895138}
   - component: {fileID: 5290611455376895197}
+  - component: {fileID: 978744361738296025}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Wall
@@ -69,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -44025399
+  m_SortingLayer: 2
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 8c69f3cd16f534bec8236a6484f500d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,6 +97,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17}
+  m_Offset: {x: 0, y: 0.07}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.09
+--- !u!210 &978744361738296025
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290611455376895199}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2

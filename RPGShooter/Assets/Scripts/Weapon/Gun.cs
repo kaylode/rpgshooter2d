@@ -3,19 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(Shootable))]
 public class Gun : Weapon
 {
     public Shootable shooter;
-    // Start is called before the first frame update
-    void Start(){}
 
-    void Update()
+    protected override void UpdateDurability(float value)
     {
-        if (Input.GetButton("Fire1"))
-        {
-            this.Attack();
-        }
+        this.durability += value;
     }
 
     private void UpdateFirePointWithMousePosition(Vector2 mousePosition)
