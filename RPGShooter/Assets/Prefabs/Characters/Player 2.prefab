@@ -72,11 +72,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -44025399
+  m_SortingLayerID: -1733108083
   m_SortingLayer: 2
-  m_SortingOrder: 30
-  m_Sprite: {fileID: -132210018975318819, guid: 4434c1267739c0b4db0c9bec5fce33a9,
-    type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -132210018975318819, guid: 4434c1267739c0b4db0c9bec5fce33a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,6 +140,8 @@ MonoBehaviour:
   speed: 5
   damage: 0
   uiInventory: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  upgradeMenu: {fileID: 0}
 --- !u!210 &376676914575079359
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -150,5 +151,5 @@ SortingGroup:
   m_GameObject: {fileID: 376676914575079296}
   m_Enabled: 1
   m_SortingLayerID: -44025399
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 2

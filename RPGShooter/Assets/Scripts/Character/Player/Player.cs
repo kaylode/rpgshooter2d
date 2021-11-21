@@ -15,16 +15,11 @@ public class Player : Character
 	public static Player instance;
 
 	// UI
-	[SerializeField]
-	private GameObject gameOverUI;
-
-	[SerializeField]
-	private GameObject upgradeMenu;
+	public GameObject gameOverUI;
+	public GameObject upgradeMenu;
 	public delegate void UpgradeMenuCallback(bool active);
 	public UpgradeMenuCallback onToggleUpgradeMenu;
 
-	[SerializeField]
-	private StatusIndicator statusIndicator;
 
 
 	private void Awake()
@@ -37,23 +32,12 @@ public class Player : Character
 
 		inventory = new Inventory();
 		uiInventory.SetInventory(inventory);
+		uiInventory.Hidden();
 	}
 
 
 	protected override void Start()
 	{
-		// UI
-		if (statusIndicator == null)
-		{
-			// Debug.LogError("No status indicator referenced on Player");
-		}
-		else
-		{
-
-			//statusIndicator.SetHealth((int)health, (int)maxHealth);
-		}
-
-
 		this.onToggleUpgradeMenu += OnUpgradeMenuToggle;
 		base.Start();
 		this.weapon = GetComponentInChildren<Weapon>();
@@ -135,21 +119,25 @@ public class Player : Character
 		if (Input.GetKeyDown(KeyCode.Alpha1))
         {
 			item = this.inventory.GetItem(0);
+			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2))
 		{
 			item = this.inventory.GetItem(1);
+			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3))
 		{
 			item = this.inventory.GetItem(2);
+			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4))
 		{
 			item = this.inventory.GetItem(3);
+			this.uiInventory.Show();
 		}
 
 		if (item != null)
@@ -171,22 +159,6 @@ public class Player : Character
 		if (_weapon != null)
 		{
 			_weapon.enabled = !active;
-		}
-	}
-
-
-	private void UpdateStatusIndicator(Vector2 mousePosition)
-	{
-		Vector2 playerPos = rb.transform.position;
-		Vector2 lookDirection = mousePosition - playerPos;
-
-		if (lookDirection.x > 0)
-		{
-			statusIndicator.transform.localEulerAngles = new Vector3(0, 0, 0);
-		}
-		else
-		{
-			statusIndicator.transform.localEulerAngles = new Vector3(0, 180, 0);
 		}
 	}
 }
