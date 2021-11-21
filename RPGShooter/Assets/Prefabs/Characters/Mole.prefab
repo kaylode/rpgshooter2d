@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3189473673749382101}
   - component: {fileID: 8480933533911139513}
   - component: {fileID: 5388216483445009585}
-  - component: {fileID: 1968457336367746907}
   m_Layer: 13
   m_Name: Mole
   m_TagString: Enemy
@@ -190,14 +189,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09362909, y: 0.108537376}
   m_EdgeRadius: 0
---- !u!210 &1968457336367746907
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5908114194377961518}
-  m_Enabled: 1
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 0
-  m_SortingOrder: 2

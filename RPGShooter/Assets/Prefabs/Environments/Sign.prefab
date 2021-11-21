@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2268861672980974509}
   - component: {fileID: 2268861672980974508}
   - component: {fileID: 2268861672980974506}
-  - component: {fileID: 4119057135831773772}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Wall
@@ -126,14 +125,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.050175615, y: 0.06806327}
   m_EdgeRadius: 0
---- !u!210 &4119057135831773772
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2268861672980974510}
-  m_Enabled: 1
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 0
-  m_SortingOrder: 2

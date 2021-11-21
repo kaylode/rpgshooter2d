@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4331734481228722046}
   - component: {fileID: 4331734481228722032}
   - component: {fileID: 1850149100112068298}
-  - component: {fileID: 6171525027334357322}
   m_Layer: 0
   m_Name: Monument
   m_TagString: Wall
@@ -100,14 +99,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0095437, y: 0.18650386}
   m_Size: {x: 0.36033866, y: 0.36033866}
   m_Direction: 0
---- !u!210 &6171525027334357322
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4331734481228722047}
-  m_Enabled: 1
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 0
-  m_SortingOrder: 2
