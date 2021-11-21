@@ -438,8 +438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -724213424196364028, guid: 4434c1267739c0b4db0c9bec5fce33a9,
-    type: 3}
+  m_Sprite: {fileID: -724213424196364028, guid: 4434c1267739c0b4db0c9bec5fce33a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1198,7 +1197,7 @@ GameObject:
   - component: {fileID: 5450253228189988223}
   m_Layer: 5
   m_Name: UIOverlay
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

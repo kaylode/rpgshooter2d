@@ -9,6 +9,7 @@ public class UI_Inventory : MonoBehaviour
     private Inventory inventory;
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
+    private float lastShownTime=0;
 
     private void Awake()
     {
@@ -16,9 +17,31 @@ public class UI_Inventory : MonoBehaviour
         itemSlotTemplate = itemSlotContainer.Find("ItemSlotTemplate");
     }
 
+    public void FixedUpdate()
+    {
+        if (Time.time - lastShownTime >= 5f)
+        {
+            Hidden();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            Show();
+    }
+
+    public void Show()
+    {
+        transform.gameObject.SetActive(true);
+        lastShownTime = Time.time;
+    }
+
+    public void Hidden()
+    {
+        transform.gameObject.SetActive(false);
+    }
+
     public void SetInventory(Inventory inventory)
     {
         this.inventory = inventory;
+        Show();
         RefreshInventoryItems();
     }
 
