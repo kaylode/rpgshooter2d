@@ -15,9 +15,9 @@ public class HealthBarRenderer : MonoBehaviour
 
     private void Start()
     {
-        this.healthBar = Instantiate(healthBarPrefab, target.transform.position+Vector3.up*1.25f, target.transform.rotation);
+        this.healthBar = Instantiate(healthBarPrefab, target.transform.position+Vector3.up*1.75f, target.transform.rotation);
         this.healthBar.transform.SetParent(canvas.transform);
-        this.healthBar.transform.localScale = new Vector3(1, 1, 1);
+        this.healthBar.transform.localScale = new Vector3(1.5f, 1, 1);
 
         slider = healthBar.GetComponent<Slider>();
         this.slider.minValue = 0;
@@ -29,7 +29,7 @@ public class HealthBarRenderer : MonoBehaviour
     {
         float value = target.GetHealth();
         this.slider.value = Math.Max(value, this.slider.minValue);
-        this.healthBar.transform.position = this.target.transform.position + Vector3.up * 1.25f;
+        this.healthBar.transform.position = this.target.transform.position + Vector3.up * 1.75f;
     }
 
 }

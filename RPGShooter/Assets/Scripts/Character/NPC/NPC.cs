@@ -31,6 +31,7 @@ public class NPC : Collidable
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            guidanceText = GameManager.instance.ShowText("Press Space to interact", 100, Color.white, transform.position + new Vector3(0f, 1.75f, 0), Vector3.zero, 0);
             this.interacble = true;
         }
     }
@@ -40,6 +41,7 @@ public class NPC : Collidable
         if (collision.gameObject.CompareTag("Player"))
         {
             this.interacble = false;
+            guidanceText.Hide();
         }
     }
 
