@@ -14,6 +14,19 @@ public class Player : Character
 
 	public static Player instance;
 
+	// UI
+	[SerializeField]
+	private GameObject gameOverUI;
+
+	[SerializeField]
+	private GameObject upgradeMenu;
+	public delegate void UpgradeMenuCallback(bool active);
+	public UpgradeMenuCallback onToggleUpgradeMenu;
+
+	[SerializeField]
+	private StatusIndicator statusIndicator;
+
+
 	private void Awake()
 	{
 		if (Player.instance != null)
@@ -29,6 +42,19 @@ public class Player : Character
 
 	protected override void Start()
 	{
+		// UI
+		if (statusIndicator == null)
+		{
+			// Debug.LogError("No status indicator referenced on Player");
+		}
+		else
+		{
+
+			//statusIndicator.SetHealth((int)health, (int)maxHealth);
+		}
+
+
+		this.onToggleUpgradeMenu += OnUpgradeMenuToggle;
 		base.Start();
 		this.weapon = GetComponentInChildren<Weapon>();
 	}
@@ -46,6 +72,13 @@ public class Player : Character
 			this.Move();
 			this.SwitchWeapon();
 		}
+
+		//this.UpdateStatusIndicator(mousePosition);
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			ToggleUpgradeMenu();
+		}
+
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
@@ -122,4 +155,38 @@ public class Player : Character
 		if (item != null)
 			this.EquipWeapon((Weapon)item);
     }
+
+
+
+	// UI
+
+	private void ToggleUpgradeMenu()
+	{
+		upgradeMenu.SetActive(!upgradeMenu.activeSelf);
+		onToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
+	}
+	void OnUpgradeMenuToggle(bool active)
+	{
+		Weapon _weapon = GetComponentInChildren<Weapon>();
+		if (_weapon != null)
+		{
+			_weapon.enabled = !active;
+		}
+	}
+
+
+	private void UpdateStatusIndicator(Vector2 mousePosition)
+	{
+		Vector2 playerPos = rb.transform.position;
+		Vector2 lookDirection = mousePosition - playerPos;
+
+		if (lookDirection.x > 0)
+		{
+			statusIndicator.transform.localEulerAngles = new Vector3(0, 0, 0);
+		}
+		else
+		{
+			statusIndicator.transform.localEulerAngles = new Vector3(0, 180, 0);
+		}
+	}
 }

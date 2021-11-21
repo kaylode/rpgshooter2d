@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 812648351686534287}
   - component: {fileID: 812648351686534384}
   - component: {fileID: 812648351581713582}
-  - component: {fileID: 812648351686534385}
   - component: {fileID: 812648351686534285}
   m_Layer: 13
   m_Name: Player
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -44025399
   m_SortingLayer: 2
-  m_SortingOrder: 30
+  m_SortingOrder: 2
   m_Sprite: {fileID: -724213424196364028, guid: 4434c1267739c0b4db0c9bec5fce33a9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -142,17 +141,9 @@ MonoBehaviour:
   speed: 5
   damage: 0
   uiInventory: {fileID: 0}
---- !u!210 &812648351686534385
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812648351686534386}
-  m_Enabled: 1
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 2
-  m_SortingOrder: 2
+  gameOverUI: {fileID: 0}
+  upgradeMenu: {fileID: 0}
+  statusIndicator: {fileID: 0}
 --- !u!95 &812648351686534285
 Animator:
   serializedVersion: 3
