@@ -11,7 +11,7 @@ public class Enemy : Character
 	public float pushForce = 30000f;
 	protected float lastAttack = 0f;
 
-	public void MoveTo(Vector3 position)
+	public virtual void MoveTo(Vector3 position)
 	{
 		if (this.moveAble)
 		{
@@ -68,9 +68,13 @@ public class Enemy : Character
 				Vector3 direction = (playerPosition - transform.position).normalized;
 
 				// Add force to player
-				target.GetComponent<Rigidbody2D>().AddRelativeForce(direction * this.pushForce);
+				target.GetComponent<Rigidbody2D>().AddForce(direction * this.pushForce);
 
 				target.GetDamaged(this.damage);
+
+				// Print damage
+				GameManager.instance.ShowText((-this.damage).ToString(), 100, Color.red, collision.transform.position + new Vector3(0.5f, 1.75f, 0), Vector3.up, 2.0f);
+
 				this.lastAttack = Time.time;
 			}
 		}

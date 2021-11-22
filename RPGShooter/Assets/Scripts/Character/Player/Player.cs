@@ -50,14 +50,6 @@ public class Player : Character
 			this.Move();
 			this.SwitchWeapon();
 		}
-
-		//this.UpdateStatusIndicator(mousePosition);
-		/*if (Input.GetKeyDown(KeyCode.U))
-		{
-			ToggleUpgradeMenu();
-		}
-		*/
-
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
