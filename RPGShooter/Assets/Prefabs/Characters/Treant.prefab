@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1557563298700425963}
   - component: {fileID: 1557563298700425962}
   - component: {fileID: 1557563298700425957}
-  - component: {fileID: 1557563298700425956}
   - component: {fileID: 1557563298700425960}
   m_Layer: 13
   m_Name: Treant
@@ -170,17 +169,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12292752, y: 0.19538884}
   m_EdgeRadius: 0
---- !u!210 &1557563298700425956
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557563298700425959}
-  m_Enabled: 1
-  m_SortingLayerID: -44025399
-  m_SortingLayer: 0
-  m_SortingOrder: 2
 --- !u!114 &1557563298700425960
 MonoBehaviour:
   m_ObjectHideFlags: 0

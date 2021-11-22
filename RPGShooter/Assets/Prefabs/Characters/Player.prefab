@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 812648351686534384}
   - component: {fileID: 812648351581713582}
   - component: {fileID: 812648351686534285}
+  - component: {fileID: -4766114259396949885}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812648351686534386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.09, y: -104.67, z: 10.133706}
+  m_LocalPosition: {x: -13.09, y: -104.67, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -141,7 +142,6 @@ MonoBehaviour:
   damage: 0
   uiInventory: {fileID: 0}
   gameOverUI: {fileID: 0}
-  upgradeMenu: {fileID: 0}
 --- !u!95 &812648351686534285
 Animator:
   serializedVersion: 3
@@ -161,3 +161,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!210 &-4766114259396949885
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812648351686534386}
+  m_Enabled: 1
+  m_SortingLayerID: -1733108083
+  m_SortingLayer: 2
+  m_SortingOrder: 2

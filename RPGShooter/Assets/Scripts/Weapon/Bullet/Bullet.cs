@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Bullet : MonoBehaviour {
 
 	public float damage;
-	public GameObject hitEffect;
+	public GameObject hitEffect = null;
 
-	private void DealDamage(Damageable target)
+	protected void DealDamage(Damageable target)
     {
 		target.GetDamaged(this.damage);
 	}
@@ -34,6 +35,11 @@ public class Bullet : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
+		else if (collision.gameObject.tag == "Destructible")
+        {
+			Destroy(collision.gameObject);
+			Destroy(gameObject);
+		}
 		else
 		{
 			Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), this.GetComponent<Collider2D>(), true);

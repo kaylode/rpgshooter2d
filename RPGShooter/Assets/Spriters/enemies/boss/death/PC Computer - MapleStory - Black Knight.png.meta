@@ -1,0 +1,1632 @@
+fileFormatVersion: 2
+guid: a590a107250368945b70397c8201d0da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9126496621477881150
+    second: PC Computer - MapleStory - Black Knight_0
+  - first:
+      213: 7843606632336366452
+    second: PC Computer - MapleStory - Black Knight_1
+  - first:
+      213: 3864677795541583057
+    second: PC Computer - MapleStory - Black Knight_2
+  - first:
+      213: -8636304876850278329
+    second: PC Computer - MapleStory - Black Knight_3
+  - first:
+      213: -2782993089244171050
+    second: PC Computer - MapleStory - Black Knight_4
+  - first:
+      213: -5029455808828979986
+    second: PC Computer - MapleStory - Black Knight_5
+  - first:
+      213: -2187794129168464655
+    second: PC Computer - MapleStory - Black Knight_6
+  - first:
+      213: -2287070255955738782
+    second: PC Computer - MapleStory - Black Knight_7
+  - first:
+      213: -2092249439335140287
+    second: PC Computer - MapleStory - Black Knight_8
+  - first:
+      213: -327501695972884400
+    second: PC Computer - MapleStory - Black Knight_9
+  - first:
+      213: 5179324227578810274
+    second: PC Computer - MapleStory - Black Knight_10
+  - first:
+      213: -5099590384806456256
+    second: PC Computer - MapleStory - Black Knight_11
+  - first:
+      213: -4202757716987832106
+    second: PC Computer - MapleStory - Black Knight_12
+  - first:
+      213: 5685227373144126556
+    second: PC Computer - MapleStory - Black Knight_13
+  - first:
+      213: 1907537538573127178
+    second: PC Computer - MapleStory - Black Knight_14
+  - first:
+      213: -2473720898527579316
+    second: PC Computer - MapleStory - Black Knight_15
+  - first:
+      213: -7248346524984083248
+    second: PC Computer - MapleStory - Black Knight_16
+  - first:
+      213: 3606336979327532752
+    second: PC Computer - MapleStory - Black Knight_17
+  - first:
+      213: 6854650079672278816
+    second: PC Computer - MapleStory - Black Knight_18
+  - first:
+      213: -391493523087648614
+    second: PC Computer - MapleStory - Black Knight_19
+  - first:
+      213: 5622624865324707563
+    second: PC Computer - MapleStory - Black Knight_20
+  - first:
+      213: 8945831203531592690
+    second: PC Computer - MapleStory - Black Knight_21
+  - first:
+      213: -4054549051597711394
+    second: PC Computer - MapleStory - Black Knight_22
+  - first:
+      213: 1606010551597596609
+    second: PC Computer - MapleStory - Black Knight_23
+  - first:
+      213: 3716785938574628109
+    second: PC Computer - MapleStory - Black Knight_24
+  - first:
+      213: -6819065432862639891
+    second: PC Computer - MapleStory - Black Knight_25
+  - first:
+      213: -1149877342002694058
+    second: PC Computer - MapleStory - Black Knight_26
+  - first:
+      213: -5582689605160621238
+    second: PC Computer - MapleStory - Black Knight_27
+  - first:
+      213: 6045628701020720688
+    second: PC Computer - MapleStory - Black Knight_28
+  - first:
+      213: -7231269828454677117
+    second: PC Computer - MapleStory - Black Knight_29
+  - first:
+      213: 6344706241846048693
+    second: PC Computer - MapleStory - Black Knight_30
+  - first:
+      213: 3257785759487156799
+    second: PC Computer - MapleStory - Black Knight_31
+  - first:
+      213: 7224542842431822722
+    second: PC Computer - MapleStory - Black Knight_32
+  - first:
+      213: -7280756230781493731
+    second: PC Computer - MapleStory - Black Knight_33
+  - first:
+      213: -5421095783046021917
+    second: PC Computer - MapleStory - Black Knight_34
+  - first:
+      213: 617397203328404466
+    second: PC Computer - MapleStory - Black Knight_35
+  - first:
+      213: 6820485959572871062
+    second: PC Computer - MapleStory - Black Knight_36
+  - first:
+      213: 6793906718420842596
+    second: PC Computer - MapleStory - Black Knight_37
+  - first:
+      213: -3659278770192878485
+    second: PC Computer - MapleStory - Black Knight_38
+  - first:
+      213: 190483732015740586
+    second: PC Computer - MapleStory - Black Knight_39
+  - first:
+      213: 5532489385798222085
+    second: PC Computer - MapleStory - Black Knight_40
+  - first:
+      213: -8708770715905628624
+    second: PC Computer - MapleStory - Black Knight_41
+  - first:
+      213: 2894245566286536609
+    second: PC Computer - MapleStory - Black Knight_42
+  - first:
+      213: 6400001291185497950
+    second: PC Computer - MapleStory - Black Knight_43
+  - first:
+      213: 6855585413009723030
+    second: PC Computer - MapleStory - Black Knight_44
+  - first:
+      213: 1129616187073250902
+    second: PC Computer - MapleStory - Black Knight_45
+  - first:
+      213: -872008794390194213
+    second: PC Computer - MapleStory - Black Knight_46
+  - first:
+      213: 6120426146305414662
+    second: PC Computer - MapleStory - Black Knight_47
+  - first:
+      213: -6695214330214708616
+    second: PC Computer - MapleStory - Black Knight_48
+  - first:
+      213: 2251755101976569261
+    second: PC Computer - MapleStory - Black Knight_49
+  - first:
+      213: 6909184167256013234
+    second: PC Computer - MapleStory - Black Knight_50
+  - first:
+      213: -5554420148123487804
+    second: PC Computer - MapleStory - Black Knight_51
+  - first:
+      213: 992867065926330947
+    second: PC Computer - MapleStory - Black Knight_52
+  - first:
+      213: 8643557734983022655
+    second: PC Computer - MapleStory - Black Knight_53
+  - first:
+      213: 4336698234673028205
+    second: PC Computer - MapleStory - Black Knight_54
+  - first:
+      213: -5542630785104839174
+    second: PC Computer - MapleStory - Black Knight_55
+  - first:
+      213: 5097182491037537904
+    second: PC Computer - MapleStory - Black Knight_56
+  - first:
+      213: -2079098749845853773
+    second: PC Computer - MapleStory - Black Knight_57
+  - first:
+      213: 3272963961126447668
+    second: PC Computer - MapleStory - Black Knight_58
+  - first:
+      213: -3144551129972746348
+    second: PC Computer - MapleStory - Black Knight_59
+  - first:
+      213: 6259371880918323580
+    second: PC Computer - MapleStory - Black Knight_60
+  - first:
+      213: 1792545762002446219
+    second: PC Computer - MapleStory - Black Knight_61
+  - first:
+      213: 8659673297722210829
+    second: PC Computer - MapleStory - Black Knight_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 844
+        width: 63
+        height: 91
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.18185055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca12015dab285180800000000000000
+      internalID: -9126496621477881150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 844
+        width: 61
+        height: 91
+      alignment: 9
+      pivot: {x: 0.52738166, y: 0.15737747}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b9e46cca61adc60800000000000000
+      internalID: 7843606632336366452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 844
+        width: 61
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16218962}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d48896aaf712a530800000000000000
+      internalID: 3864677795541583057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 844
+        width: 61
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5273818, y: 0.17470114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7409d5bb87ea52880800000000000000
+      internalID: -8636304876850278329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_4
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 844
+        width: 62
+        height: 91
+      alignment: 9
+      pivot: {x: 0.50898004, y: 0.1512592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4fb3fb782d069d0800000000000000
+      internalID: -2782993089244171050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 844
+        width: 65
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5085656, y: 0.13902266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4493dc698c33ab0800000000000000
+      internalID: -5029455808828979986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 747
+        width: 81
+        height: 81
+      alignment: 9
+      pivot: {x: 0.40376973, y: 0.1150784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f48a39b4d463a1e0800000000000000
+      internalID: -2187794129168464655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 747
+        width: 86
+        height: 83
+      alignment: 9
+      pivot: {x: 0.36404684, y: 0.2182654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f756938b1b240e0800000000000000
+      internalID: -2287070255955738782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 747
+        width: 83
+        height: 82
+      alignment: 9
+      pivot: {x: 0.31888497, y: 0.22840919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1443bea5836d6f2e0800000000000000
+      internalID: -2092249439335140287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_9
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 747
+        width: 79
+        height: 84
+      alignment: 9
+      pivot: {x: 0.35200018, y: 0.24150376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050c23451fa747bf0800000000000000
+      internalID: -327501695972884400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 747
+        width: 82
+        height: 82
+      alignment: 9
+      pivot: {x: 0.350625, y: 0.20803982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afc86991f7a0e740800000000000000
+      internalID: 5179324227578810274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_11
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 747
+        width: 81
+        height: 83
+      alignment: 9
+      pivot: {x: 0.36252773, y: 0.21155742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0441d95509d9a39b0800000000000000
+      internalID: -5099590384806456256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 640
+        width: 92
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4213273, y: 0.2026381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d898e1af1ecca5c0800000000000000
+      internalID: -4202757716987832106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 521
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54359b9c2cf5ee40800000000000000
+      internalID: 5685227373144126556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 521
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ecf56e84fe87a10800000000000000
+      internalID: 1907537538573127178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 521
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43bdc9f2f39badd0800000000000000
+      internalID: -2473720898527579316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_16
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 521
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcf2692d33b86b90800000000000000
+      internalID: -7248346524984083248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 521
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de3c2120684c0230800000000000000
+      internalID: 3606336979327532752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_18
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 521
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f18721eeb902f50800000000000000
+      internalID: 6854650079672278816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_19
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 521
+        width: 86
+        height: 85
+      alignment: 9
+      pivot: {x: 0.38831702, y: 0.23054415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a989e7807b2219af0800000000000000
+      internalID: -391493523087648614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_20
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 521
+        width: 86
+        height: 83
+      alignment: 9
+      pivot: {x: 0.40549913, y: 0.20624809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee25fa6683970e40800000000000000
+      internalID: 5622624865324707563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_21
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 521
+        width: 86
+        height: 83
+      alignment: 9
+      pivot: {x: 0.40549913, y: 0.17954338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f31b13251af52c70800000000000000
+      internalID: 8945831203531592690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 368
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.48240885, y: 0.1859974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed71f179e195bb7c0800000000000000
+      internalID: -4054549051597711394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 369
+        width: 88
+        height: 78
+      alignment: 9
+      pivot: {x: 0.36566734, y: 0.14952949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cff0817612b94610800000000000000
+      internalID: 1606010551597596609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_24
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 369
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.34167933, y: 0.1398201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0558e66e1da49330800000000000000
+      internalID: 3716785938574628109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 370
+        width: 88
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3740633, y: 0.14952908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8b3162e10dd51a0800000000000000
+      internalID: -6819065432862639891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_26
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 369
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.39445314, y: 0.14905548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658b8a656a0da00f0800000000000000
+      internalID: -1149877342002694058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_27
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 369
+        width: 88
+        height: 78
+      alignment: 9
+      pivot: {x: 0.43283427, y: 0.19689041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ba229e16d4682b0800000000000000
+      internalID: -5582689605160621238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_28
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 369
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.38565716, y: 0.1398201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e0f30c54366e350800000000000000
+      internalID: 6045628701020720688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_29
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 369
+        width: 114
+        height: 87
+      alignment: 9
+      pivot: {x: 0.53888583, y: 0.26221544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38585f7676e55ab90800000000000000
+      internalID: -7231269828454677117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_30
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 369
+        width: 110
+        height: 87
+      alignment: 9
+      pivot: {x: 0.53358376, y: 0.22824623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7ff6516bcec0850800000000000000
+      internalID: 6344706241846048693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_31
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 369
+        width: 114
+        height: 89
+      alignment: 9
+      pivot: {x: 0.51944345, y: 0.25095633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32ee8443eaf53d20800000000000000
+      internalID: 3257785759487156799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_32
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 369
+        width: 108
+        height: 86
+      alignment: 9
+      pivot: {x: 0.50000113, y: 0.24226841}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b5dbb107bb24460800000000000000
+      internalID: 7224542842431822722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_33
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 369
+        width: 112
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5065972, y: 0.23613231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e9e0088ce85fa90800000000000000
+      internalID: -7280756230781493731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 233
+        width: 99
+        height: 107
+      alignment: 9
+      pivot: {x: 0.507463, y: 0.47238016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec7c268b1664c4b0800000000000000
+      internalID: -5421095783046021917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_35
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 233
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb85bd3c7f619800800000000000000
+      internalID: 617397203328404466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_36
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 105
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69751eff7db37ae50800000000000000
+      internalID: 6820485959572871062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_37
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 105
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4683d9c2a2ec84e50800000000000000
+      internalID: 6793906718420842596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_38
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 107
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b647680a851a73dc0800000000000000
+      internalID: -3659278770192878485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_39
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 112
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f94ee1fbb4a200800000000000000
+      internalID: 190483732015740586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_40
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 111
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5014f14b8c957cc40800000000000000
+      internalID: 5532489385798222085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_41
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 126
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036ee18cc2b342780800000000000000
+      internalID: -8708770715905628624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_42
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 115
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af1247120d6a2820800000000000000
+      internalID: 2894245566286536609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_43
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 156
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e572723044f51d850800000000000000
+      internalID: 6400001291185497950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_44
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 152
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e4bc55c9ee32f50800000000000000
+      internalID: 6855585413009723030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 115
+        width: 106
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656480befe33daf00800000000000000
+      internalID: 1129616187073250902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_46
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 120
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd71b512f9006e3f0800000000000000
+      internalID: -872008794390194213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_47
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 124
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6061c84172f10f450800000000000000
+      internalID: 6120426146305414662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 47
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a82781a02d513a0800000000000000
+      internalID: -6695214330214708616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 44
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5ac7eb557df3f10800000000000000
+      internalID: 2251755101976569261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_50
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 44
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b93c09c46a52ef50800000000000000
+      internalID: 6909184167256013234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_51
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 47
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1b3d9cd4cbae2b0800000000000000
+      internalID: -5554420148123487804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_52
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 44
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a29b5065f57cd00800000000000000
+      internalID: 992867065926330947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_53
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 47
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f383e35e6f514f770800000000000000
+      internalID: 8643557734983022655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_54
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 35
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cdfbf411c0f2c30800000000000000
+      internalID: 4336698234673028205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_55
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 28
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd7ea4caae9413b0800000000000000
+      internalID: -5542630785104839174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_56
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 28
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07612a53874dcb640800000000000000
+      internalID: 5097182491037537904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_57
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 28
+        width: 46
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9aa7ad3be8523e0800000000000000
+      internalID: -2079098749845853773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_58
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 28
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ae899b167eb6d20800000000000000
+      internalID: 3272963961126447668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497dbe7686f4c54d0800000000000000
+      internalID: -3144551129972746348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_60
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 28
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c719437ef81cdd650800000000000000
+      internalID: 6259371880918323580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_61
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 28
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87a9cb8fd660e810800000000000000
+      internalID: 1792545762002446219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Black Knight_62
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 7
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0afaadbbf65d2870800000000000000
+      internalID: 8659673297722210829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c7e0a6394b3d1b04a86b8d5e2dac8d28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

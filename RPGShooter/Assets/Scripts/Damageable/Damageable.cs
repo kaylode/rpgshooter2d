@@ -7,7 +7,7 @@ public class Damageable : Collidable
     public float maxHealth;
     protected HealthBar healthBar = new HealthBar();
 
-    protected virtual void Start() 
+    protected override void Start() 
     {
         healthBar.Initialize(maxHealth);
     }

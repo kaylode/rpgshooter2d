@@ -16,11 +16,6 @@ public class Player : Character
 
 	// UI
 	public GameObject gameOverUI;
-	public GameObject upgradeMenu;
-	public delegate void UpgradeMenuCallback(bool active);
-	public UpgradeMenuCallback onToggleUpgradeMenu;
-
-
 
 	private void Awake()
 	{
@@ -38,7 +33,6 @@ public class Player : Character
 
 	protected override void Start()
 	{
-		this.onToggleUpgradeMenu += OnUpgradeMenuToggle;
 		base.Start();
 		this.weapon = GetComponentInChildren<Weapon>();
 	}
@@ -56,34 +50,27 @@ public class Player : Character
 			this.Move();
 			this.SwitchWeapon();
 		}
-
-		//this.UpdateStatusIndicator(mousePosition);
-		if (Input.GetKeyDown(KeyCode.U))
-		{
-			ToggleUpgradeMenu();
-		}
-
 	}
 
 	private void UpdatePlayerRotation(Vector2 mousePosition)
-    {
+	{
 		Vector2 playerPos = rb.transform.position;
 		Vector2 lookDirection = mousePosition - playerPos;
-		
+
 		if (lookDirection.x > 0)
 		{
-			this.transform.localEulerAngles = new Vector3(0,0,0);
+			this.transform.localEulerAngles = new Vector3(0, 0, 0);
 		}
 		else
 		{
-			this.transform.localEulerAngles = new Vector3(0,180,0);
+			this.transform.localEulerAngles = new Vector3(0, 180, 0);
 		}
 	}
 
 	public void EquipWeapon(Weapon _weapon)
-    {
+	{
 		if (this.weapon != null && !object.ReferenceEquals(this.weapon, _weapon))
-        {
+		{
 			this.weapon.gameObject.SetActive(false);
 		}
 
@@ -93,7 +80,7 @@ public class Player : Character
 	}
 
 	public void AddItemToInventory(Collectible item)
-    {
+	{
 		this.inventory.AddItem(item);
 		this.uiInventory.SetInventory(this.inventory);
 	}
@@ -114,10 +101,10 @@ public class Player : Character
 	}
 
 	protected void SwitchWeapon()
-    {
+	{
 		Collectible item = null;
 		if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
+		{
 			item = this.inventory.GetItem(0);
 			this.uiInventory.Show();
 		}
@@ -142,23 +129,5 @@ public class Player : Character
 
 		if (item != null)
 			this.EquipWeapon((Weapon)item);
-    }
-
-
-
-	// UI
-
-	private void ToggleUpgradeMenu()
-	{
-		upgradeMenu.SetActive(!upgradeMenu.activeSelf);
-		onToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
-	}
-	void OnUpgradeMenuToggle(bool active)
-	{
-		Weapon _weapon = GetComponentInChildren<Weapon>();
-		if (_weapon != null)
-		{
-			_weapon.enabled = !active;
-		}
 	}
 }

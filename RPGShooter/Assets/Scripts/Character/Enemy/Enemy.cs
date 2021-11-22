@@ -11,7 +11,7 @@ public class Enemy : Character
 	public float pushForce = 30000f;
 	protected float lastAttack = 0f;
 
-	public void MoveTo(Vector3 position)
+	public virtual void MoveTo(Vector3 position)
 	{
 		if (this.moveAble)
 		{
@@ -19,6 +19,11 @@ public class Enemy : Character
 			Vector2 headingDirection = new Vector2(direction.x * speed, direction.y * speed);
 			this.rb.velocity = headingDirection;
 		}
+	}
+
+	public void AttackTo(Damageable target)
+    {
+		this.Attack(target);
 	}
 
 	protected override void Die()
@@ -43,31 +48,35 @@ public class Enemy : Character
 	// Basic attack, deal damage on touch
 	protected override void Attack(Damageable target)
 	{
-		if (Time.time > this.attackRate + this.lastAttack)
+		if (this.moveAble)
 		{
-			Vector3 playerPosition = target.transform.position;
-			Vector3 direction = (playerPosition - transform.position).normalized;
-
-			// Sound effect
-			SoundManager.instance.PlaySound("Punch");
-
-			// Add force to player
-			target.GetComponent<Rigidbody2D>().AddRelativeForce(direction * this.pushForce);
-
-
-			target.GetDamaged(this.damage);
-			this.lastAttack = Time.time;
-
-			// Print damage
-			GameManager.instance.ShowText((-this.damage).ToString(), 100, Color.red, transform.position + new Vector3(0.5f,1.75f,0), Vector3.up, 2.0f);
+			Vector3 direction = (target.transform.position - transform.position).normalized;
+			Vector2 headingDirection = new Vector2(direction.x * speed*2, direction.y * speed*2);
+			this.rb.velocity = headingDirection;
 		}
 	}
 
-	protected void OnCollisionStay2D(Collision2D collision)
+	protected virtual void OnCollisionStay2D(Collision2D collision)
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			this.Attack(collision.gameObject.GetComponent<Damageable>());
+			Damageable target = collision.gameObject.GetComponent<Damageable>();
+			
+			if (Time.time > this.attackRate + this.lastAttack)
+			{
+				Vector3 playerPosition = target.transform.position;
+				Vector3 direction = (playerPosition - transform.position).normalized;
+
+				// Add force to player
+				target.GetComponent<Rigidbody2D>().AddForce(direction * this.pushForce);
+
+				target.GetDamaged(this.damage);
+
+				// Print damage
+				GameManager.instance.ShowText((-this.damage).ToString(), 100, Color.red, collision.transform.position + new Vector3(0.5f, 1.75f, 0), Vector3.up, 2.0f);
+
+				this.lastAttack = Time.time;
+			}
 		}
 	}
 }

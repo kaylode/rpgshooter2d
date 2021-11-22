@@ -141,7 +141,6 @@ MonoBehaviour:
   damage: 0
   uiInventory: {fileID: 0}
   gameOverUI: {fileID: 0}
-  upgradeMenu: {fileID: 0}
 --- !u!210 &376676914575079359
 SortingGroup:
   m_ObjectHideFlags: 0
