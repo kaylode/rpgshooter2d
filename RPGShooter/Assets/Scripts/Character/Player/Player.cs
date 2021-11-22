@@ -10,8 +10,8 @@ public class Player : Character
 	private Weapon weapon;
 
 	public UI_Inventory uiInventory;
-	private Inventory inventory;
 
+	public static Inventory inventory;
 	public static Player instance;
 
 	// UI
@@ -81,8 +81,8 @@ public class Player : Character
 
 	public void AddItemToInventory(Collectible item)
 	{
-		this.inventory.AddItem(item);
-		this.uiInventory.SetInventory(this.inventory);
+		Player.inventory.AddItem(item);
+		this.uiInventory.SetInventory(Player.inventory);
 	}
 
 	protected override void Move()
@@ -105,25 +105,25 @@ public class Player : Character
 		Collectible item = null;
 		if (Input.GetKeyDown(KeyCode.Alpha1))
 		{
-			item = this.inventory.GetItem(0);
+			item = Player.inventory.GetItem(0);
 			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			item = this.inventory.GetItem(1);
+			item = Player.inventory.GetItem(1);
 			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3))
 		{
-			item = this.inventory.GetItem(2);
+			item = Player.inventory.GetItem(2);
 			this.uiInventory.Show();
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4))
 		{
-			item = this.inventory.GetItem(3);
+			item = Player.inventory.GetItem(3);
 			this.uiInventory.Show();
 		}
 

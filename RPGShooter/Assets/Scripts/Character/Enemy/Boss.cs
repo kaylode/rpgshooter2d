@@ -8,6 +8,12 @@ public class Boss : Enemy
 
 	public float shootingForce = 20f;
 	public GameObject bulletPrefab;
+	
+	protected override void Start()
+    {
+		base.Start();
+		SoundManager.instance.PlaySound("BattleTheme");
+    }
 
 	// Trigger the trigger zone
 	protected void InvokeTrigger()

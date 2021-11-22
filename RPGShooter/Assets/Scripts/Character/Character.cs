@@ -7,6 +7,8 @@ public abstract class Character : Damageable
     public float speed;
     public float damage;
 
+    [HideInInspector]
+    public SpriteRenderer spriteRenderer;
     protected Animator animator;
     protected Rigidbody2D rb;
 
@@ -29,6 +31,7 @@ public abstract class Character : Damageable
         base.Start();
         this.rb = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
+        this.spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public virtual Vector3 GetPosition()

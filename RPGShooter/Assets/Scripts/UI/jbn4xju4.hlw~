@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class UpgradeMenu : MonoBehaviour
@@ -8,31 +7,23 @@ public class UpgradeMenu : MonoBehaviour
     Transform speedTransform;
     Text healthText;
     Text speedText;
-    Player player;
 
     public int HEALTH_UPGRADE_PRICE = 100;
     public int SPEED_UPGRADE_PRICE = 100;
 
-    private void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     protected void Start()
     {
-        Transform frameTransform = transform.Find("HeroAttributes");
-        healthTransform = frameTransform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
-        speedTransform = frameTransform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
+        healthTransform = transform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
+        speedTransform = transform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
         healthText = healthTransform.gameObject.GetComponent<Text>();
         speedText = speedTransform.gameObject.GetComponent<Text>();
-        player = GameManager.instance.player;
         UpdateValues();
     }
 
     private void UpdateValues()
     {
-        healthText.text = "HEALTH: " + ((int)player.GetMaxHealth()).ToString();
-        speedText.text = "SPEED: " + ((int)player.speed).ToString();
+        healthText.text = "HEALTH: " + ((int)GameManager.instance.player.GetMaxHealth()).ToString();
+        speedText.text = "SPEED: " + ((int)GameManager.instance.player.speed).ToString();
     }
     public void UpgradeHealth()
     {
@@ -40,7 +31,7 @@ public class UpgradeMenu : MonoBehaviour
         int coin = GameManager.instance.GetCoin();
         if (coin >= HEALTH_UPGRADE_PRICE)
         {
-            player.maxHealth += upgradeFactor;
+            GameManager.instance.player.maxHealth += upgradeFactor;
             GameManager.instance.coin -= HEALTH_UPGRADE_PRICE;
             UpdateValues();
         }
@@ -50,7 +41,7 @@ public class UpgradeMenu : MonoBehaviour
         int coin = GameManager.instance.GetCoin();
         if (coin >= SPEED_UPGRADE_PRICE)
         {
-            player.speed += upgradeFactor;
+            GameManager.instance.player.speed += upgradeFactor;
             GameManager.instance.coin -= SPEED_UPGRADE_PRICE;
             UpdateValues();
         }
@@ -58,18 +49,23 @@ public class UpgradeMenu : MonoBehaviour
 
     public void Toggle()
     {
-        
-        if (gameObject.activeSelf)
+        if (transform.gameObject.activeSelf)
         {
             Cursor.visible = false;
             GameManager.instance.UnFreezeAllMovement();
-            transform.gameObject.SetActive(false);
         }
         else
         {
             Cursor.visible = true;
             GameManager.instance.FreezeAllMovement();
-            transform.gameObject.SetActive(true);
         }
+        transform.gameObject.SetActive(!transform.gameObject.activeSelf);
     }
+
+    public void BuyWeapon(Collectible item)
+    {
+
+        GameManager.instance.player.AddItemToInventory()
+    }
+
 }

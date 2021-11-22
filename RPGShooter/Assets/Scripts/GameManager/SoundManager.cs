@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class SoundManager : MonoBehaviour
         instance = this;
         // Prevent being destroyed between scenes
         DontDestroyOnLoad(gameObject);
-        PlaySound("Windless Slopes");
+        PlaySoundTrackForScene();
     }
 
     public void PlaySound(string name)
@@ -48,5 +49,32 @@ public class SoundManager : MonoBehaviour
             Sound sound = new Sound(obj.name, source, (AudioClip)obj);
             sounds.Add(sound);
         }
+    }
+
+    private void PlaySoundTrackForScene()
+    {
+        int y = SceneManager.GetActiveScene().buildIndex;
+
+        switch (y)
+        {
+            case 0:
+                PlaySound("Opening");
+                break;
+            case 1:
+                PlaySound("Windless Slopes");
+                break;
+
+            case 2:
+                PlaySound("Cozy Inn");
+                break;
+
+            case 3:
+                PlaySound("Wind Walker");
+                break;
+
+            default:
+                break;
+        }
+
     }
 }
