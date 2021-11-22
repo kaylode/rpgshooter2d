@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Portal : Collidable
 {
@@ -17,5 +18,6 @@ public class Portal : Collidable
     private void Teleport()
     {
         Debug.Log("Teleported");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

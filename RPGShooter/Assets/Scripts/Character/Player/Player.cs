@@ -93,11 +93,8 @@ public class Player : Character
 	protected override void Die()
 	{
 		this.animator.SetTrigger(DEATH_ANIM);
-
-		//Wait for 2 seconds
-		new WaitForSecondsRealtime(6);
-
-		GameManager.instance.LoadScene(2);
+        instance.GetComponent<Collider2D>().enabled = false;
+        gameOverUI.SetActive(true);
 	}
 
 	protected void SwitchWeapon()
