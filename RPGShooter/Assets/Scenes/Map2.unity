@@ -217,6 +217,10 @@ PrefabInstance:
       value: TriggerZone
       objectReference: {fileID: 0}
     - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
+      propertyPath: triggerPoint
+      value: 
+      objectReference: {fileID: 1427501123}
+    - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1273,6 +1277,10 @@ PrefabInstance:
       value: TriggerZone (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
+      propertyPath: triggerPoint
+      value: 
+      objectReference: {fileID: 1427501123}
+    - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1638,6 +1646,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b8aeb75cbaa2941b1e83a119d332d3, type: 3}
+--- !u!114 &1427501123 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2999130873151172887, guid: e7b8aeb75cbaa2941b1e83a119d332d3, type: 3}
+  m_PrefabInstance: {fileID: 1772616023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093e14f5da14d994c84d57731af89217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1444541138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1778,6 +1797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriggerZone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
+      propertyPath: triggerPoint
+      value: 
+      objectReference: {fileID: 1427501123}
     - target: {fileID: 4502661767762109519, guid: 176a2d419d02379439c803cf4b2be67f, type: 3}
       propertyPath: enemyPrefabs.Array.size
       value: 2
