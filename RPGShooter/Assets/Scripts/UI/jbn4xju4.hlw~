@@ -1,0 +1,71 @@
+using UnityEngine;
+using UnityEngine.UI;
+public class UpgradeMenu : MonoBehaviour
+{
+    private int upgradeFactor = 1;
+    Transform healthTransform;
+    Transform speedTransform;
+    Text healthText;
+    Text speedText;
+
+    public int HEALTH_UPGRADE_PRICE = 100;
+    public int SPEED_UPGRADE_PRICE = 100;
+
+    protected void Start()
+    {
+        healthTransform = transform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
+        speedTransform = transform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
+        healthText = healthTransform.gameObject.GetComponent<Text>();
+        speedText = speedTransform.gameObject.GetComponent<Text>();
+        UpdateValues();
+    }
+
+    private void UpdateValues()
+    {
+        healthText.text = "HEALTH: " + ((int)GameManager.instance.player.GetMaxHealth()).ToString();
+        speedText.text = "SPEED: " + ((int)GameManager.instance.player.speed).ToString();
+    }
+    public void UpgradeHealth()
+    {
+
+        int coin = GameManager.instance.GetCoin();
+        if (coin >= HEALTH_UPGRADE_PRICE)
+        {
+            GameManager.instance.player.maxHealth += upgradeFactor;
+            GameManager.instance.coin -= HEALTH_UPGRADE_PRICE;
+            UpdateValues();
+        }
+    }
+    public void UpgradeSpeed()
+    {
+        int coin = GameManager.instance.GetCoin();
+        if (coin >= SPEED_UPGRADE_PRICE)
+        {
+            GameManager.instance.player.speed += upgradeFactor;
+            GameManager.instance.coin -= SPEED_UPGRADE_PRICE;
+            UpdateValues();
+        }
+    }
+
+    public void Toggle()
+    {
+        if (transform.gameObject.activeSelf)
+        {
+            Cursor.visible = false;
+            GameManager.instance.UnFreezeAllMovement();
+        }
+        else
+        {
+            Cursor.visible = true;
+            GameManager.instance.FreezeAllMovement();
+        }
+        transform.gameObject.SetActive(!transform.gameObject.activeSelf);
+    }
+
+    public void BuyWeapon(Collectible item)
+    {
+
+        GameManager.instance.player.AddItemToInventory()
+    }
+
+}

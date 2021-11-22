@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class UpgradeMenu : MonoBehaviour
@@ -7,48 +8,68 @@ public class UpgradeMenu : MonoBehaviour
     Transform speedTransform;
     Text healthText;
     Text speedText;
+    Player player;
 
-    void OnEnable()
+    public int HEALTH_UPGRADE_PRICE = 100;
+    public int SPEED_UPGRADE_PRICE = 100;
+
+    private void Awake()
     {
-        healthTransform = transform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
-        speedTransform = transform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
+        this.gameObject.SetActive(false);
+    }
+
+    protected void Start()
+    {
+        Transform frameTransform = transform.Find("HeroAttributes");
+        healthTransform = frameTransform.Find("Attributes").Find("HealthAttribute").Find("HealthAmount");
+        speedTransform = frameTransform.Find("Attributes").Find("SpeedAttribute").Find("SpeedAmount");
         healthText = healthTransform.gameObject.GetComponent<Text>();
         speedText = speedTransform.gameObject.GetComponent<Text>();
+        player = GameManager.instance.player;
         UpdateValues();
     }
 
     private void UpdateValues()
     {
-        healthText.text = "HEALTH: " + ((int)GameManager.instance.player.GetMaxHealth()).ToString();
-        speedText.text = "SPEED: " + ((int)GameManager.instance.player.speed).ToString();
+        healthText.text = "HEALTH: " + ((int)player.GetMaxHealth()).ToString();
+        speedText.text = "SPEED: " + ((int)player.speed).ToString();
     }
     public void UpgradeHealth()
     {
-        Debug.Log("Test");
-        GameManager.instance.player.maxHealth += upgradeFactor;
-        UpdateValues();
+
+        int coin = GameManager.instance.GetCoin();
+        if (coin >= HEALTH_UPGRADE_PRICE)
+        {
+            player.maxHealth += upgradeFactor;
+            GameManager.instance.coin -= HEALTH_UPGRADE_PRICE;
+            UpdateValues();
+        }
     }
     public void UpgradeSpeed()
     {
-        GameManager.instance.player.speed += upgradeFactor;
-        Debug.Log("Test");
-
-        UpdateValues();
+        int coin = GameManager.instance.GetCoin();
+        if (coin >= SPEED_UPGRADE_PRICE)
+        {
+            player.speed += upgradeFactor;
+            GameManager.instance.coin -= SPEED_UPGRADE_PRICE;
+            UpdateValues();
+        }
     }
 
     public void Toggle()
     {
-        if (transform.gameObject.activeSelf)
+        
+        if (gameObject.activeSelf)
         {
             Cursor.visible = false;
             GameManager.instance.UnFreezeAllMovement();
+            transform.gameObject.SetActive(false);
         }
         else
         {
             Cursor.visible = true;
             GameManager.instance.FreezeAllMovement();
+            transform.gameObject.SetActive(true);
         }
-        transform.gameObject.SetActive(!transform.gameObject.activeSelf);
     }
-
 }

@@ -23,12 +23,22 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;
 
     public Player player;
+
+    [HideInInspector]
     public float playerHealth;
+    [HideInInspector]
     public int playerSkin;
+    [HideInInspector]
     public int playerWeapon;
+    [HideInInspector]
     public int coin = 0;
+    [HideInInspector]
     public int speed;
 
+    public void SetPlayerSkin(Sprite sprite)
+    {
+        player.spriteRenderer.sprite = sprite;
+    }
 
     public void FreezeAllMovement()
     {
