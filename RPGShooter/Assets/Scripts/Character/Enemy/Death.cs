@@ -6,7 +6,6 @@ public class Death : Boss
 {
     public float[] shootingForces;
     public GameObject[] bulletPrefabs;
-	private SpriteRenderer spriteRenderer;
 	PHRASE phrase;
 	PHRASE lastPhrase;
 	bool ableToAttack=true;
@@ -36,7 +35,6 @@ public class Death : Boss
 	protected override void Start()
 	{
 		base.Start();
-		this.spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	protected void PhraseAttack(Damageable target)
@@ -162,10 +160,10 @@ public class Death : Boss
 	{
 		this.animator.SetTrigger(DEATH_ANIM);
 
-		//InvokeTrigger();
-
 		float delay = 0f;
 		this.phrase = PHRASE.DEATH;
+
+		InvokeTrigger();
 		Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
 	}
 }

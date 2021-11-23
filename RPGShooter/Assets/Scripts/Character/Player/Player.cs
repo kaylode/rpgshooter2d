@@ -94,6 +94,7 @@ public class Player : Character
 	{
 		this.animator.SetTrigger(DEATH_ANIM);
         instance.GetComponent<Collider2D>().enabled = false;
+		GameManager.instance.FreezeAllMovement();
         gameOverUI.SetActive(true);
 	}
 

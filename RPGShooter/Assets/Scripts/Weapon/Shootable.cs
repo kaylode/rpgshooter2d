@@ -22,7 +22,7 @@ public class Shootable : MonoBehaviour
 			SoundManager.instance.PlaySound("Laser1");
 			Rigidbody2D rb = newBullet.GetComponent<Rigidbody2D>();
 			rb.AddForce(shootingForce * firePoint.right, ForceMode2D.Impulse);
-			Destroy(newBullet, 5f);
+			Destroy(newBullet, 2f);
 			lastShot = Time.time;
 		}
 

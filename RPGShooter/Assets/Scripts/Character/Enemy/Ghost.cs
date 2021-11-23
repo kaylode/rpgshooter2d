@@ -5,13 +5,11 @@ using UnityEngine;
 public class Ghost : Enemy
 {
 
-	SpriteRenderer spriteRenderer;
 	bool spriteDirection;
 
 	protected override void Start()
 	{
 		base.Start();
-		spriteRenderer = GetComponent<SpriteRenderer>();
 		spriteDirection = spriteRenderer.flipX;
 	}
 

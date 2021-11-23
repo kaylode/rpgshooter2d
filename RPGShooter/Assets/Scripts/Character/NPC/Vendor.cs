@@ -20,8 +20,6 @@ public class Vendor : NPC
 
     protected void Shopping()
     {
-        Debug.Log(upgradeMenu.gameObject.activeSelf);
-        Debug.Log(upgradeMenu.transform.gameObject.activeSelf);
         upgradeMenu.Toggle();
         
     }

@@ -6,8 +6,6 @@ public class PortalTrigger : TriggerZone
 {
     public Portal portal;
     public Boss boss;
-    //private Boss bossObject;
-
 
     protected override void Start()
     {
