@@ -17,7 +17,6 @@ public class Portal : Collidable
 
     private void Teleport()
     {
-        Debug.Log("Teleported");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

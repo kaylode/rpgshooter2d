@@ -16,7 +16,6 @@ public class UpgradeMenu : MonoBehaviour
     private void Awake()
     {
         transform.gameObject.SetActive(false);
-        gameObject.SetActive(false);
     }
 
     protected void Start()
@@ -62,15 +61,15 @@ public class UpgradeMenu : MonoBehaviour
         if (transform.gameObject.activeSelf)
         {
             Cursor.visible = false;
-            this.transform.gameObject.SetActive(false);
-            this.gameObject.SetActive(false);
             GameManager.instance.UnFreezeAllMovement();
+            transform.gameObject.SetActive(false);
         }
         else
         {
+            Debug.Log("Toggle");
             Cursor.visible = true;
-            this.gameObject.SetActive(true);
             this.transform.gameObject.SetActive(true);
+            this.gameObject.SetActive(true);
             GameManager.instance.FreezeAllMovement();
         }
     }

@@ -1,0 +1,35 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+public class MapMenu : MonoBehaviour
+{
+    private bool isActive;
+
+    public void Start()
+    {
+        isActive = this.gameObject.activeSelf;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Debug.Log("Press M");
+            Show();
+        }
+    }
+
+    public void ToggleMapMenu()
+    {
+        this.gameObject.SetActive(!isActive);
+    }
+
+    public void Show()
+    {
+        transform.gameObject.SetActive(true);
+    }
+
+    public void Hidden()
+    {
+        transform.gameObject.SetActive(false);
+    }
+}
