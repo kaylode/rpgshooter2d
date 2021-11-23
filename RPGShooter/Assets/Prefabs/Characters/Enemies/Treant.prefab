@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoamingRange: 5
-  ChaseRange: 5
-  StopChaseRange: 8
+  ChaseRange: 8
+  StopChaseRange: 10
   AttackRange: 3
 --- !u!50 &1557563298700425962
 Rigidbody2D:
@@ -185,7 +185,8 @@ MonoBehaviour:
   shield: 0
   speed: 2
   damage: 50
-  reward: {fileID: 0}
-  dropRate: 0
-  attackRate: 0.2
+  spriteRenderer: {fileID: 0}
+  reward: {fileID: 5912084203769970447, guid: 5087dc37eccf0944fbc60a331f41c9b6, type: 3}
+  dropRate: 0.5
+  attackRate: 0.3
   pushForce: 10000

@@ -116,7 +116,7 @@ MonoBehaviour:
   firePoint: {fileID: 665627084366957147}
   bulletPrefab: {fileID: 4847584998270608119, guid: be56b4a21a2ac624191f1e27761d7ef6, type: 3}
   shootingForce: 40
-  fireRate: 0.1
+  fireRate: 0.15
 --- !u!58 &60190356640940078
 CircleCollider2D:
   m_ObjectHideFlags: 0

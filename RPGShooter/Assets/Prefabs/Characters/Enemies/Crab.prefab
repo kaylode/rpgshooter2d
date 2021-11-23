@@ -118,10 +118,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6f60cc17b28704c80a3a61c92ef536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoamingRange: 4
-  ChaseRange: 8
+  RoamingRange: 6
+  ChaseRange: 10
   StopChaseRange: 15
-  AttackRange: 4
+  AttackRange: 5
 --- !u!50 &2027503559546159637
 Rigidbody2D:
   serializedVersion: 4
@@ -158,11 +158,12 @@ MonoBehaviour:
   maxHealth: 100
   shield: 0
   speed: 3
-  damage: 20
+  damage: 10
+  spriteRenderer: {fileID: 0}
   reward: {fileID: 7796724803455700281, guid: de284ad5136a5f14ab56251ca90fad0c, type: 3}
   dropRate: 0.3
   attackRate: 0.2
-  pushForce: 3
+  pushForce: 3000
 --- !u!61 &2027503559546159639
 BoxCollider2D:
   m_ObjectHideFlags: 0

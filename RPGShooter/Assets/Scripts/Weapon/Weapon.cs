@@ -52,4 +52,12 @@ public abstract class Weapon : Collectible
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
+
+    protected override void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals("Player"))
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<Collider2D>(), this.GetComponent<Collider2D>(), true);
+        }
+    }
 }

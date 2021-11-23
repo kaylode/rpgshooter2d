@@ -54,7 +54,7 @@ public class Death : Boss
 
 			newBullet.transform.eulerAngles = new Vector3(0, 0, n);
 			newBullet.GetComponent<Rigidbody2D>().AddForce(shootingForce * direction, ForceMode2D.Impulse);
-			Destroy(newBullet, 5f);
+			Destroy(newBullet, 2f);
 			lastAttack = Time.time;
 		}
 	}

@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6f60cc17b28704c80a3a61c92ef536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoamingRange: 5
+  RoamingRange: 8
   ChaseRange: 15
   StopChaseRange: 20
   AttackRange: 15
@@ -155,14 +155,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a956838d60f2e4f9c17fafde21ef20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 2000
   shield: 0
   speed: 1
-  damage: 40
+  damage: 60
+  spriteRenderer: {fileID: 0}
   reward: {fileID: 5912084203769970447, guid: 5087dc37eccf0944fbc60a331f41c9b6, type: 3}
-  dropRate: 0.9
+  dropRate: 1
   attackRate: 0.7
-  pushForce: 5000
+  pushForce: 8000
   shootingForce: 20
   bulletPrefab: {fileID: 7117733160028456222, guid: 2b3cef5b6f2de7e4c9ac3fa753bbd9d7, type: 3}
 --- !u!70 &33939080734920298

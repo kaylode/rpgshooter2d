@@ -40,4 +40,9 @@ public class Sound
     {
         this.source.PlayOneShot(this.clip);
     }
+
+    public void Stop()
+    {
+        this.source.Stop();
+    }
 }

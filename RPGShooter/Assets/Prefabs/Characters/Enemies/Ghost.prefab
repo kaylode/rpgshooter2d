@@ -157,8 +157,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   shield: 0
-  speed: 5
+  speed: 3
   damage: 15
+  spriteRenderer: {fileID: 0}
   reward: {fileID: 7796724803455700281, guid: de284ad5136a5f14ab56251ca90fad0c, type: 3}
   dropRate: 0.3
   attackRate: 0.6

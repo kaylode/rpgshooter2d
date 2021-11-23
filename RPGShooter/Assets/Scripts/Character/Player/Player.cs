@@ -14,9 +14,6 @@ public class Player : Character
 	public static Inventory inventory;
 	public static Player instance;
 
-	// UI
-	public GameObject gameOverUI;
-
 	private void Awake()
 	{
 		if (Player.instance != null)
@@ -93,12 +90,14 @@ public class Player : Character
 	protected override void Die()
 	{
 		this.animator.SetTrigger(DEATH_ANIM);
-        instance.GetComponent<Collider2D>().enabled = false;
-		GameManager.instance.FreezeAllMovement();
-        gameOverUI.SetActive(true);
+		if (this.weapon != null)
+        {
+			Destroy(this.weapon.gameObject);
+        }
+		GameManager.instance.RetryScene();
 	}
 
-	protected void SwitchWeapon()
+    protected void SwitchWeapon()
 	{
 		Collectible item = null;
 		if (Input.GetKeyDown(KeyCode.Alpha1))

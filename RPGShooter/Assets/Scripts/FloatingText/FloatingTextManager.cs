@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class FloatingTextManager : MonoBehaviour
 {
-
-    public GameObject textContainer;
+    //public static FloatingTextManager instance;
     public GameObject textPrefab;
 
     private List<FloatingText> floatingTexts = new List<FloatingText>();
@@ -21,7 +20,7 @@ public class FloatingTextManager : MonoBehaviour
     private FloatingText GetFloatingText()
     {
         FloatingText txt = new FloatingText();
-        txt.go = Instantiate(this.textPrefab, this.textContainer.transform);
+        txt.go = Instantiate(this.textPrefab, this.transform);
         txt.txt = txt.go.GetComponent<Text>();
         floatingTexts.Add(txt);
         return txt;

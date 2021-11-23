@@ -59,6 +59,8 @@ public class Shop: MonoBehaviour
         bool success = false;
         if (type == "weapon")
         {
+            if (GameManager.instance.coin < this.sellingWeaponsPrice[index])
+                return;
             success = BuyWeapon(this.sellingWeapons[index].GetComponent<Weapon>());
             if (success)
             {
@@ -67,6 +69,8 @@ public class Shop: MonoBehaviour
         }
         else if (type == "skin")
         {
+            if (GameManager.instance.coin < this.sellingSkinsPrice[index])
+                return;
             success = BuySkin(this.sellingSkins[index].GetComponent<SpriteRenderer>().sprite);
             if (success)
             {

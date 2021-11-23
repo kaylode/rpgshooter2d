@@ -39,6 +39,36 @@ public class SoundManager : MonoBehaviour
         Debug.LogWarning("Sound: " + name + " not found");
     }
 
+    public void StopSound(string name)
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.name == name)
+            {
+                s.Stop();
+                return;
+            }
+        }
+        Debug.LogWarning("Sound: " + name + " not found");
+    }
+
+    public void PlaySong(string name)
+    {
+        this.StopAllSounds();
+        this.PlaySound(name);
+    }
+
+    private void StopAllSounds()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.name == name)
+            {
+                s.Stop();
+            }
+        }
+    }
+
     private void GetAllSoundsFromFolder()
     {
         UnityEngine.Object[] audioClips = Resources.LoadAll("Audio", typeof(AudioClip));
@@ -58,18 +88,18 @@ public class SoundManager : MonoBehaviour
         switch (y)
         {
             case 0:
-                PlaySound("Opening");
+                PlaySong("Opening");
                 break;
             case 1:
-                PlaySound("Windless Slopes");
+                PlaySong("Windless Slopes");
                 break;
 
             case 2:
-                PlaySound("Cozy Inn");
+                PlaySong("Cozy Inn");
                 break;
 
             case 3:
-                PlaySound("Wind Walker");
+                PlaySong("Wind Walker");
                 break;
 
             default:

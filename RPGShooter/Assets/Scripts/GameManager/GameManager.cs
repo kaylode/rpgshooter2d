@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
  * Singleton Design Pattern
  */
 {
+    public GameObject gameOverUI;
+    public GameObject gameWinUI;
+
     public static GameManager instance;
 
     private void Awake()
@@ -20,10 +23,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    [HideInInspector]
+    public Player player = Player.instance;
     public FloatingTextManager floatingTextManager;
-
-    public Player player;
-
     [HideInInspector]
     public float playerHealth;
     [HideInInspector]
@@ -77,6 +79,19 @@ public class GameManager : MonoBehaviour
     public FloatingText ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration)
     {
         return floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
+    }
+
+    public void RetryScene()
+    {
+        player.GetComponent<Collider2D>().enabled = false;
+        this.FreezeAllMovement();
+        gameOverUI.SetActive(true);
+    }
+    public void WinScene()
+    {
+        player.GetComponent<Collider2D>().enabled = false;
+        this.FreezeAllMovement();
+        gameWinUI.SetActive(true);
     }
 
     public void LoadScene(int level)

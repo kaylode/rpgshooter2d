@@ -192,7 +192,8 @@ MonoBehaviour:
   shield: 0
   speed: 3
   damage: 30
-  reward: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  reward: {fileID: 4216197278599588013, guid: 4711bf8d542cbc945a045350ad902d8c, type: 3}
   dropRate: 0.5
   attackRate: 0.3
   pushForce: 30000
@@ -208,4 +209,4 @@ MonoBehaviour:
   - {fileID: 3618734687778838111, guid: aa9c95e8700c8c040a3377b08d7ad8c6, type: 3}
   HEALTH_PHRASE:
   - 0.6
-  - 0.15
+  - 0.2

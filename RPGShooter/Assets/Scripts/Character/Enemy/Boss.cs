@@ -12,7 +12,7 @@ public class Boss : Enemy
 	protected override void Start()
     {
 		base.Start();
-		SoundManager.instance.PlaySound("BattleTheme");
+		SoundManager.instance.PlaySong("BattleTheme");
     }
 
 	// Trigger the trigger zone
@@ -36,6 +36,8 @@ public class Boss : Enemy
 				obj.transform.position = transform.position;
 			}	
 		}
+		SoundManager.instance.StopSound("BattleTheme");
+
 		InvokeTrigger();
 		Destroy(gameObject);
 	}

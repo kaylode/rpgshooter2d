@@ -9,7 +9,14 @@ public class GameOverUI : MonoBehaviour
     }
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (sceneIndex == 1)
+        {
+            GameObject go = GameObject.Find("Manager");
+            Destroy(go.gameObject);
+        };
+
+        SceneManager.LoadScene(sceneIndex);
     }
 
 }

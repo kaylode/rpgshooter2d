@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c6f60cc17b28704c80a3a61c92ef536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoamingRange: 4
+  RoamingRange: 6
   ChaseRange: 8
   StopChaseRange: 15
   AttackRange: 4
@@ -160,6 +160,7 @@ MonoBehaviour:
   shield: 0
   speed: 4
   damage: 20
+  spriteRenderer: {fileID: 0}
   reward: {fileID: 6144220081261200847, guid: 3db631bf27bef0b418b5e63d88712259, type: 3}
   dropRate: 0.5
   attackRate: 0.3
