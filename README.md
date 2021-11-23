@@ -2,6 +2,8 @@
 
 - Unity version: 2020.3.21f1
 
+Game Demo: https://play.unity.com/mg/other/rpgshooter2d-final
+
 ## References:
 - Some scripts: https://github.com/hamdanjaveed/Boxhead
 - Top down shooting: https://www.youtube.com/watch?v=LNLVOjbrQj4
